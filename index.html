@@ -3,830 +3,2137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofia Villanueva - Desarrolladora de Software Senior</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome (para iconos) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Marco Segura - Trafficker Digital Estratégico</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Marco Segura, Trafficker Digital experto. Maximizo tu ROI con campañas de publicidad online efectivas en Meta Ads, Google Ads y más. Estrategias de tráfico pago para hacer crecer tu negocio.">
+    <meta name="keywords" content="trafficker digital, marco segura, publicidad online, meta ads, facebook ads, instagram ads, google ads, tiktok ads, sem, ppc, gestión de campañas, marketing digital, conversión, roi">
+    <meta name="author" content="Marco Segura">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Marco Segura - Trafficker Digital Estratégico">
+    <meta property="og:description" content="Impulso tu negocio con estrategias de tráfico pago inteligentes y rentables. Experto en Meta Ads, Google Ads y optimización de embudos.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0A0A0C/08D9D6?text=Marco+Segura+Trafficker"> <!-- Cambiar por URL real de imagen destacada -->
+    <meta property="og:url" content="https://www.marcosegura-trafficker.com"> <!-- Cambiar por tu URL real -->
+    <meta property="og:type" content="website">
 
     <style>
-        /* --- Variables CSS y Reset --- */
         :root {
-            --color-primary: #4a90e2; /* Azul vibrante */
-            --color-secondary: #50e3c2; /* Verde azulado menta */
-            --color-tertiary: #f5a623; /* Naranja/Amarillo para Python */
-            --color-dark: #333a40; /* Gris oscuro */
-            --color-medium: #6c7a89; /* Gris medio */
-            --color-light: #f8f9fa; /* Gris muy claro */
-            --color-white: #ffffff;
-            --font-primary: 'Poppins', sans-serif;
-            --font-secondary: 'Roboto Slab', serif;
-            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
-            --shadow-medium: 0 6px 20px rgba(0, 0, 0, 0.12);
-            --border-radius: 8px;
+            --color-blanco: #FFFFFF;
+            --color-negro: #000000;
+            --color-acento: #08D9D6; /* Teal vibrante */
+            --color-acento-hover: #07C5C0;
+            --color-acento-transparente: rgba(8, 217, 214, 0.1);
+            --color-acento-gradiente-start: #08D9D6;
+            --color-acento-gradiente-end: #05A8A4;
+            --color-fondo-oscuro: #0A0A0C;
+            --color-fondo-secundario: #141417;
+            --color-fondo-tarjeta: #1A1A1E;
+            --color-texto-principal: #F0F0F0;
+            --color-texto-secundario: #B8B8B8;
+            --color-borde-sutil: #2f2f33;
+            --color-borde-destacado: #444448;
+
+            --font-principal: 'Poppins', 'Inter', sans-serif;
+            --font-secundaria: 'Inter', 'Roboto', sans-serif;
+
+            --transicion-suave: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transicion-rapida: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transicion-elastica: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            --padding-seccion-y: 90px;
+            --padding-seccion-x: 0;
+            --border-radius-global: 14px;
+            --shadow-profundo: 0 25px 50px -12px rgba(0,0,0,0.35);
+            --shadow-medio: 0 10px 25px rgba(8, 217, 214, 0.15);
+            --shadow-ligero: 0 6px 15px rgba(0,0,0,0.2);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: var(--font-primary);
-            line-height: 1.7;
-            color: var(--color-dark);
-            background-color: var(--color-white);
-            overflow-x: hidden;
-            background: linear-gradient(to bottom, var(--color-white), var(--color-light));
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container { max-width: 1140px; margin: auto; padding: 0 20px; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--color-fondo-oscuro);
+            color: var(--color-texto-principal);
+            font-family: var(--font-secundaria);
+            line-height: 1.75;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            opacity: 0;
+            animation: fadeInPage 1s ease-out forwards 0.3s;
+        }
+        @keyframes fadeInPage {
+            to { opacity: 1; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px; /* Ajustado para portafolio */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
         /* --- Header y Navegación --- */
-        header {
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 0.8rem 0;
+        .main-header {
+            background-color: rgba(10, 10, 12, 0.65);
+            backdrop-filter: blur(20px) saturate(190%);
+            -webkit-backdrop-filter: blur(20px) saturate(190%);
+            padding: 1.3rem 0;
             position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            top: 0; left: 0; z-index: 1000;
-            box-shadow: var(--shadow-light);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        header.scrolled { background-color: var(--color-white); box-shadow: var(--shadow-medium); }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        header .logo {
-            font-family: var(--font-secondary);
-            font-size: 1.8rem; font-weight: 700;
-            color: var(--color-primary); text-decoration: none;
-        }
-        header .logo span { color: var(--color-secondary); }
-        header nav ul { list-style: none; display: flex; }
-        header nav ul li { margin-left: 25px; }
-        header nav ul li a {
-            color: var(--color-medium); text-decoration: none;
-            font-size: 0.95rem; font-weight: 600; padding: 8px 0;
-            position: relative; transition: color 0.3s ease;
-        }
-        header nav ul li a::after {
-            content: ''; position: absolute; bottom: 0; left: 0;
-            width: 0; height: 2px; background-color: var(--color-primary);
-            transition: width 0.3s ease;
-        }
-        header nav ul li a:hover, header nav ul li a.active { color: var(--color-primary); }
-        header nav ul li a:hover::after, header nav ul li a.active::after { width: 100%; }
-
-        /* --- Sección Hero --- */
-        #hero {
-            background: linear-gradient(rgba(45, 51, 56, 0.88), rgba(45, 51, 56, 0.88)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; /* Imagen diferente */
-            color: var(--color-white);
-            min-height: 100vh;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            text-align: center; padding: 120px 20px 40px;
-        }
-        #hero .hero-content { max-width: 800px; }
-        #hero h1 {
-            font-family: var(--font-secondary); font-size: 4rem; margin-bottom: 15px;
-            font-weight: 700; line-height: 1.2; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        }
-        #hero h1 span { color: var(--color-secondary); }
-        #hero p.subtitle {
-            font-size: 1.5rem; margin-bottom: 35px; font-weight: 300;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        .btn {
-            display: inline-block; background-color: var(--color-primary); color: var(--color-white);
-            padding: 14px 35px; text-decoration: none; border-radius: var(--border-radius);
-            font-size: 1.05rem; font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(74, 144, 226, 0.35);
-        }
-        .btn:hover {
-            background-color: #3a7bc8; transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(74, 144, 226, 0.45);
-        }
-        .btn-secondary {
-            background-color: transparent; color: var(--color-white);
-            border: 2px solid var(--color-secondary); margin-left: 15px; box-shadow: none;
-        }
-        .btn-secondary:hover {
-            background-color: var(--color-secondary); color: var(--color-dark);
-            box-shadow: 0 4px 12px rgba(80, 227, 194, 0.35); border-color: var(--color-secondary);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(47, 47, 51, 0.5);
+            transition: background-color 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease;
         }
 
-        /* --- Estilos de Secciones Generales --- */
-        section { padding: 100px 0; overflow: hidden; }
+        .main-header.scrolled {
+             background-color: rgba(20, 20, 23, 0.8);
+             padding: 1.1rem 0;
+             box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-principal);
+            font-size: clamp(1.6rem, 3.5vw, 1.9rem); /* Ajustado */
+            font-weight: 700; /* Un poco menos bold */
+            color: var(--color-blanco);
+            text-decoration: none;
+            transition: transform var(--transicion-rapida), color var(--transicion-rapida);
+            letter-spacing: -0.5px;
+        }
+        .logo:hover {
+            transform: scale(1.03);
+            color: var(--color-acento);
+        }
+        .logo span {
+            color: var(--color-acento);
+            font-weight: 800;
+            transition: color var(--transicion-rapida);
+        }
+        .logo:hover span {
+            color: var(--color-blanco);
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-nav ul li {
+            margin-left: 32px; /* Ajustado */
+        }
+
+        .main-nav ul li a {
+            color: var(--color-texto-secundario);
+            text-decoration: none;
+            font-family: var(--font-principal);
+            font-weight: 500;
+            font-size: 1rem; /* Ajustado */
+            padding: 0.6rem 0.4rem;
+            position: relative;
+            transition: color var(--transicion-suave);
+        }
+
+        .main-nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2.5px; /* Ajustado */
+            background: linear-gradient(90deg, var(--color-acento-gradiente-start), var(--color-acento-gradiente-end));
+            border-radius: 3px;
+            transition: width 0.4s var(--transicion-elastica);
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active-link {
+            color: var(--color-blanco);
+        }
+
+        .main-nav ul li a:hover::after,
+        .main-nav ul li a.active-link::after {
+            width: 100%;
+        }
+
+        .main-nav .nav-cta {
+            background: linear-gradient(45deg, var(--color-acento-gradiente-start), var(--color-acento-gradiente-end));
+            color: var(--color-fondo-oscuro) !important; /* Texto oscuro para contraste */
+            padding: 0.7rem 1.6rem; /* Ajustado */
+            border-radius: 25px;
+            margin-left: 32px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 5px 15px rgba(8, 217, 214, 0.25);
+            transition: var(--transicion-suave), transform var(--transicion-rapida);
+        }
+        .main-nav .nav-cta:hover {
+            background: linear-gradient(45deg, var(--color-acento-hover), var(--color-acento-gradiente-end));
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(8, 217, 214, 0.35);
+        }
+        .main-nav .nav-cta::after { display: none; }
+
+
+        /* --- Hero Section --- */
+        .hero-section {
+            min-height: 90vh; /* Un poco menos para no forzar tanto el scroll */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 150px 0 80px;
+            position: relative;
+            overflow: hidden;
+            background: var(--color-fondo-oscuro);
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse at 30% 30%, rgba(8, 217, 214, 0.08), transparent 50%),
+                radial-gradient(ellipse at 70% 70%, rgba(5, 168, 164, 0.06), transparent 50%);
+            background-size: 180% 180%;
+            animation: subtleShine 25s ease infinite alternate;
+            z-index: 1;
+        }
+        @keyframes subtleShine {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        .hero-content {
+            max-width: 850px; /* Ajustado */
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-section .eyebrow-text {
+            font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+            font-weight: 600;
+            color: var(--color-acento);
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            background-color: var(--color-acento-transparente);
+            border: 1px solid rgba(8, 217, 214, 0.3);
+            border-radius: 6px;
+        }
+
+        .hero-section h1 {
+            font-family: var(--font-principal);
+            font-size: clamp(2.8rem, 7vw, 4.8rem); /* Ajustado */
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.8rem; /* Ajustado */
+            color: var(--color-blanco);
+            letter-spacing: -1.5px;
+            text-shadow: 0 3px 15px rgba(0,0,0,0.25);
+        }
+        .hero-section h1 .highlight {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--color-acento-gradiente-start), var(--color-acento-gradiente-end), #3CF5F0);
+            background-size: 250% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            animation: shineTextHero 6s linear infinite;
+        }
+        @keyframes shineTextHero {
+            to { background-position: 250% center; }
+        }
+
+        .hero-section p.subtitle {
+            font-size: clamp(1.1rem, 2.3vw, 1.35rem); /* Ajustado */
+            color: var(--color-texto-secundario);
+            margin-bottom: 2.8rem; /* Ajustado */
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--color-acento-gradiente-start), var(--color-acento-gradiente-end));
+            color: var(--color-fondo-oscuro) !important; /* Texto oscuro para contraste */
+            padding: 1rem 2.5rem; /* Ajustado */
+            font-family: var(--font-principal);
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: var(--transicion-suave), transform 0.25s var(--transicion-elastica);
+            box-shadow: 0 7px 25px rgba(8, 217, 214, 0.3), 0 3px 10px rgba(0,0,0,0.25);
+            border: none;
+        }
+        .cta-button svg {
+            margin-left: 0.5rem;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover svg {
+            transform: translateX(4px);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(45deg, var(--color-acento-hover), var(--color-acento-gradiente-end));
+            transform: translateY(-5px) scale(1.06);
+            box-shadow: 0 10px 30px rgba(8, 217, 214, 0.4), 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--color-acento) !important;
+            border: 2px solid var(--color-acento);
+            box-shadow: none;
+            margin-left: 1.2rem;
+        }
+        .cta-button.secondary:hover {
+            background: var(--color-acento-transparente);
+            color: var(--color-blanco) !important;
+            border-color: var(--color-acento);
+            box-shadow: 0 0 20px rgba(8, 217, 214, 0.2);
+        }
+        .hero-scroll-down {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: var(--color-texto-secundario);
+            font-size: 0.8rem;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity var(--transicion-suave), transform var(--transicion-suave);
+        }
+         .hero-scroll-down:hover {
+            opacity: 1;
+            transform: translateX(-50%) translateY(3px);
+        }
+        .hero-scroll-down svg {
+            display: block;
+            margin: 5px auto 0;
+            width: 20px;
+            height: 20px;
+            animation: bounceArrow 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+        }
+        @keyframes bounceArrow {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50% { transform: translateY(-8px); opacity: 1;}
+        }
+
+        /* --- General Page Content & Sections --- */
+        .page-content > section:first-of-type:not(.hero-section) { /* Excluye hero de este padding */
+            padding-top: calc(var(--padding-seccion-y) + 70px);
+        }
+        #page-hero > .hero-section {
+            padding-top: calc(150px + 60px); /* Específico para el hero si el header es más alto */
+        }
+
+
+        .section-padding {
+            padding: var(--padding-seccion-y) var(--padding-seccion-x);
+            position: relative;
+        }
         .section-title {
-            font-family: var(--font-secondary); font-size: 3rem; text-align: center;
-            margin-bottom: 70px; color: var(--color-dark); position: relative;
-            padding-bottom: 20px; font-weight: 700;
+            font-family: var(--font-principal);
+            font-size: clamp(2.2rem, 5vw, 3.2rem); /* Ajustado */
+            font-weight: 700;
+            color: var(--color-blanco);
+            text-align: center;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.8px;
         }
-        .section-title::after {
-            content: ''; position: absolute; bottom: 0; left: 50%;
-            transform: translateX(-50%); width: 100px; height: 4px;
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            border-radius: 2px;
+        .section-title .highlight {
+            color: var(--color-acento);
+        }
+        .section-subtitle {
+            font-size: clamp(1rem, 2vw, 1.2rem); /* Ajustado */
+            color: var(--color-texto-secundario);
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 3.5rem auto; /* Ajustado */
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        .bg-secondary {
+            background-color: var(--color-fondo-secundario);
+            border-top: 1px solid var(--color-borde-sutil);
+            border-bottom: 1px solid var(--color-borde-sutil);
         }
 
         /* --- Sección Sobre Mí --- */
-        #sobre-mi { background-color: var(--color-white); }
-        #sobre-mi .container { display: flex; align-items: center; gap: 60px; }
-        .about-img { flex: 0 0 320px; text-align: center; }
-        .about-img img {
-            max-width: 100%; height: auto; border-radius: 50%;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
-            border: 7px solid var(--color-white); position: relative; z-index: 1;
-        }
-        .about-content { flex: 1; }
-        .about-content h3 {
-            font-size: 2.2rem; color: var(--color-primary);
-            margin-bottom: 20px; font-weight: 600;
-        }
-        .about-content p { margin-bottom: 20px; color: var(--color-medium); font-size: 1.1rem; }
-        .about-content .highlight { color: var(--color-dark); font-weight: 600; }
-        .social-links { margin-top: 30px; }
-        .social-links a {
-            color: var(--color-medium); font-size: 1.6rem; margin-right: 18px;
-            transition: color 0.3s ease, transform 0.3s ease; display: inline-block;
-        }
-        .social-links a:hover { color: var(--color-primary); transform: translateY(-4px); }
-
-        /* --- Sección Habilidades --- */
-        #habilidades { background-color: var(--color-light); }
-        .skills-grid {
+        #page-sobre-mi .about-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Más espacio por item */
-            gap: 35px; text-align: center;
-        }
-        .skill-item {
-            background-color: var(--color-white); padding: 35px 20px;
-            border-radius: var(--border-radius); box-shadow: var(--shadow-light);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .skill-item:hover { transform: translateY(-10px); box-shadow: var(--shadow-medium); }
-        .skill-item i {
-            font-size: 3.5rem; margin-bottom: 18px; color: var(--color-primary);
-            transition: color 0.3s ease;
-        }
-        /* Colores específicos para iconos */
-        .skill-item.python i { color: var(--color-tertiary); }
-        .skill-item.php i { color: #777BB4; } /* Color PHP */
-        .skill-item.db i { color: #00758F; } /* Color MySQL-like */
-        .skill-item:hover i { filter: brightness(1.1); } /* Ligeramente más brillante al hacer hover */
-        .skill-item h4 { font-size: 1.15rem; font-weight: 600; color: var(--color-dark); }
-
-        /* --- Sección Proyectos --- */
-        #proyectos { background-color: var(--color-white); }
-        .proyectos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Tarjetas un poco más anchas */
-            gap: 40px;
-        }
-        .proyecto-card {
-            background-color: var(--color-white); border-radius: var(--border-radius);
-            box-shadow: var(--shadow-light); overflow: hidden;
-            display: flex; flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .proyecto-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-medium); }
-        .proyecto-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
-        .proyecto-card h4 {
-            font-size: 1.5rem; font-weight: 600; color: var(--color-primary); margin-bottom: 15px;
-            display: flex; align-items: center; /* Alinear icono y título */
-        }
-        .proyecto-card h4 i { /* Icono opcional en título */
-            margin-right: 10px;
-            font-size: 1.3rem;
-            opacity: 0.8;
-        }
-        .proyecto-card p.desc { font-size: 1rem; color: var(--color-medium); margin-bottom: 25px; flex-grow: 1; }
-        .tech-tags { margin-top: 15px; margin-bottom: 5px; }
-        .tech-tags span {
-            display: inline-block; background-color: #e9ecef; color: var(--color-medium);
-            padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; margin-right: 5px; margin-bottom: 5px;
-        }
-        .tech-tags span.python { background-color: #ffe8cc; color: #c67c00;}
-        .tech-tags span.js { background-color: #f7df1e; color: #333; }
-        .tech-tags span.react { background-color: #61dafb; color: #282c34; }
-        .tech-tags span.api { background-color: #ffccd5; color: #c81d4a; }
-
-        /* Estilos para las apps JS (Widget) */
-        .app-container {
-            border: 1px solid #e9ecef; padding: 25px; border-radius: 6px;
-            margin-top: 20px; background-color: var(--color-light);
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
             text-align: center;
         }
+        @media (min-width: 992px) {
+            #page-sobre-mi .about-container {
+                grid-template-columns: auto 1fr; /* Imagen toma su ancho, texto el resto */
+                text-align: left;
+                gap: 4rem;
+            }
+            #page-sobre-mi .about-image-wrapper { margin-right: 2rem; }
+        }
+        #page-sobre-mi .about-image-wrapper {
+            max-width: 350px; /* Ajustado para foto de perfil */
+            margin: 0 auto 2rem auto;
+            border-radius: 50%; /* Imagen de perfil redonda */
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(8, 217, 214, 0.2);
+            border: 5px solid var(--color-acento-transparente);
+        }
+        #page-sobre-mi .about-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        #page-sobre-mi .about-content h2.section-title {
+            text-align: inherit; /* Hereda de .about-container */
+        }
+        #page-sobre-mi .about-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--color-texto-secundario);
+        }
+        #page-sobre-mi .about-content .skills-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: inherit; /* Hereda de .about-container */
+        }
+        #page-sobre-mi .about-content .skills-list li {
+            background-color: var(--color-fondo-tarjeta);
+            color: var(--color-texto-principal);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--color-borde-sutil);
+            transition: var(--transicion-rapida);
+        }
+        #page-sobre-mi .about-content .skills-list li:hover {
+            background-color: var(--color-acento-transparente);
+            border-color: var(--color-acento);
+            color: var(--color-acento);
+            transform: translateY(-2px);
+        }
 
-        /* Contador */
-        #contador-valor { font-size: 3rem; font-weight: 700; color: var(--color-primary); margin: 10px 0 15px; display: block; }
-        .contador-btn {
-            background-color: var(--color-medium); color: white; border: none; padding: 9px 20px;
-            margin: 0 6px; border-radius: 20px; cursor: pointer; font-size: 0.95rem; font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+        /* --- Sección Servicios --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustado */
+            gap: 2.5rem;
         }
-        .contador-btn:hover { background-color: var(--color-dark); transform: scale(1.05); }
-        .contador-btn:active { transform: scale(0.98); }
+        .service-card {
+            background: linear-gradient(150deg, var(--color-fondo-tarjeta), #222226);
+            padding: 2rem;
+            border-radius: var(--border-radius-global);
+            border: 1px solid var(--color-borde-sutil);
+            transition: transform var(--transicion-suave), box-shadow var(--transicion-suave), border-color var(--transicion-suave);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%;
+            height: 3.5px; /* Ajustado */
+            background: linear-gradient(90deg, transparent, var(--color-acento), transparent);
+            transition: left 0.6s var(--transicion-elastica);
+        }
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-medio);
+            border-color: var(--color-acento);
+        }
+        .service-card:hover::before {
+            left: 0;
+        }
+        .service-card .service-icon {
+            width: 45px; /* Ajustado */
+            height: 45px;
+            margin-bottom: 1.2rem; /* Ajustado */
+            color: var(--color-acento);
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(-10deg);
+        }
+        .service-card .service-icon svg {
+            width: 100%; height: 100%; fill: currentColor;
+        }
+        .service-card h3 {
+            font-family: var(--font-principal);
+            font-size: 1.45rem; /* Ajustado */
+            color: var(--color-blanco);
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: var(--color-texto-secundario);
+            line-height: 1.7;
+            flex-grow: 1;
+            margin-bottom: 1.2rem;
+        }
 
-        /* Generador de Citas */
-        #cita-texto { font-style: italic; color: var(--color-dark); margin-bottom: 10px; min-height: 65px; font-size: 1.1rem; }
-        #cita-autor { font-weight: 600; color: var(--color-medium); text-align: right; display: block; font-size: 0.95rem; margin-top: 8px; }
-        .btn-generar {
-            margin-top: 20px; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); color: var(--color-white);
-            border: none; padding: 11px 28px; border-radius: 20px; cursor: pointer; font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 12px rgba(80, 227, 194, 0.35);
+        /* --- Sección Proyectos (Casos de Éxito) --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.8rem;
         }
-        .btn-generar:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(80, 227, 194, 0.45); }
+        .project-card {
+            background-color: var(--color-fondo-tarjeta);
+            border-radius: var(--border-radius-global);
+            overflow: hidden;
+            border: 1px solid var(--color-borde-sutil);
+            transition: transform var(--transicion-suave), box-shadow var(--transicion-suave), border-color var(--transicion-suave);
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-profundo);
+            border-color: var(--color-acento);
+        }
+        .project-card-image-wrapper {
+            height: 220px; /* Ajustado */
+            overflow: hidden;
+            background-color: #333;
+        }
+        .project-card-image-placeholder {
+            width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s var(--transicion-suave);
+        }
+        .project-card:hover .project-card-image-placeholder {
+            transform: scale(1.1);
+        }
+        .project-card-content {
+            padding: 1.8rem; /* Ajustado */
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card-content h3 {
+            font-family: var(--font-principal);
+            font-size: 1.35rem; /* Ajustado */
+            color: var(--color-blanco);
+            margin-bottom: 0.7rem;
+        }
+        .project-card-content .project-category {
+            font-size: 0.8rem;
+            color: var(--color-acento);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .project-card-content p.excerpt {
+            font-size: 0.9rem;
+            color: var(--color-texto-secundario);
+            line-height: 1.65;
+            margin-bottom: 1.2rem;
+            flex-grow: 1;
+             display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .project-card-content .project-link {
+            color: var(--color-acento);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            align-self: flex-start;
+            margin-top: auto;
+            transition: color var(--transicion-rapida), letter-spacing var(--transicion-rapida);
+        }
+        .project-card-content .project-link:hover {
+            color: var(--color-acento-hover);
+            letter-spacing: 0.5px;
+        }
 
-        /* To-Do List */
-        .todo-input-group { display: flex; gap: 10px; margin-bottom: 15px; }
-        #todo-input {
-            flex-grow: 1; padding: 10px 15px; border: 1px solid #ced4da; border-radius: 6px;
-            font-size: 1rem; font-family: var(--font-primary);
+        /* Single Project Page */
+        #page-single-project .project-header-image {
+            width: 100%;
+            height: auto;
+            max-height: 450px; /* Ajustado */
+            object-fit: cover;
+            border-radius: var(--border-radius-global);
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--color-borde-destacado);
+            box-shadow: var(--shadow-ligero);
         }
-        #add-todo-btn {
-            padding: 10px 18px; background-color: var(--color-primary); color: white;
-            border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background-color 0.3s ease;
+        #page-single-project .project-meta-info {
+            background-color: var(--color-fondo-tarjeta);
+            padding: 1.5rem 2rem;
+            border-radius: var(--border-radius-global);
+            border: 1px solid var(--color-borde-sutil);
+            margin-bottom: 2.5rem;
         }
-        #add-todo-btn:hover { background-color: #3a7bc8; }
-        #todo-list { list-style: none; padding: 0; margin-top: 15px; text-align: left; }
-        #todo-list li {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 12px 15px; background-color: var(--color-white);
-            border-radius: 4px; margin-bottom: 8px; border: 1px solid #eee;
-            transition: background-color 0.3s ease;
+        #page-single-project .project-meta-info h4 {
+            font-family: var(--font-principal);
+            font-size: 1.2rem;
+            color: var(--color-blanco);
+            margin-bottom: 1rem;
         }
-        #todo-list li.completed span { text-decoration: line-through; color: var(--color-medium); }
-        #todo-list li span { cursor: pointer; flex-grow: 1; margin-right: 10px; }
-        #todo-list li button.delete-btn {
-            background: none; border: none; color: #e74c3c; cursor: pointer; font-size: 1rem;
-            opacity: 0.6; transition: opacity 0.3s ease; padding: 5px;
+        #page-single-project .project-meta-info ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.95rem;
         }
-        #todo-list li:hover button.delete-btn { opacity: 1; }
+        #page-single-project .project-meta-info ul li {
+            margin-bottom: 0.6rem;
+            color: var(--color-texto-secundario);
+        }
+        #page-single-project .project-meta-info ul li strong {
+            color: var(--color-texto-principal);
+            min-width: 100px;
+            display: inline-block;
+        }
+        #page-single-project .project-content-section {
+            margin-bottom: 2rem;
+        }
+        #page-single-project .project-content-section h3 {
+            font-family: var(--font-principal);
+            font-size: 1.6rem;
+            color: var(--color-blanco);
+            margin-top: 2em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid var(--color-acento-transparente);
+            padding-bottom: 0.5rem;
+        }
+        #page-single-project .project-content-section p,
+        #page-single-project .project-content-section ul {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-texto-secundario);
+            margin-bottom: 1.2em;
+        }
+        #page-single-project .project-content-section ul {
+            list-style: disc;
+            padding-left: 1.5em;
+        }
+        #page-single-project .project-content-section ul li { margin-bottom: 0.5em; }
 
-        /* Color Palette Generator */
-        .color-palette { display: flex; justify-content: center; gap: 10px; margin-bottom: 15px; min-height: 80px; }
-        .color-box {
-            width: 60px; height: 60px; border-radius: var(--border-radius);
-            display: flex; justify-content: center; align-items: flex-end; /* Mover texto abajo */
-            font-size: 0.75rem; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-            font-weight: 600; cursor: pointer; transition: transform 0.2s ease; padding-bottom: 5px;
+        .back-to-projects-link {
+            display: inline-block;
+            color: var(--color-acento);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            transition: var(--transicion-rapida);
         }
-        .color-box:hover { transform: scale(1.1); }
-        #generate-palette-btn {
-             margin-top: 15px; background-color: var(--color-tertiary); color: white;
-             border: none; padding: 10px 22px; border-radius: 20px; cursor: pointer; font-weight: 600;
-             transition: background-color 0.3s ease, transform 0.2s ease;
+        .back-to-projects-link:hover {
+            letter-spacing: 0.5px;
+            text-decoration: underline;
         }
-        #generate-palette-btn:hover { background-color: #d48f1b; transform: scale(1.05); }
 
-        /* Python Project Card */
-        .python-project-card .proyecto-content { background-color: #fffaf0; /* Fondo crema claro */ }
-        .python-project-card h4 { color: var(--color-tertiary); }
-        .python-project-card .github-link {
-             margin-top: 15px; display: inline-block; font-weight: 600;
-             color: var(--color-tertiary); text-decoration: none;
+        /* --- Sección Testimonios --- */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
         }
-        .python-project-card .github-link i { margin-right: 5px; }
-        .python-project-card .github-link:hover { text-decoration: underline; }
+        .testimonial-card {
+            background-color: var(--color-fondo-tarjeta);
+            padding: 2rem;
+            border-radius: var(--border-radius-global);
+            border-left: 5px solid var(--color-acento);
+            box-shadow: var(--shadow-ligero);
+            transition: transform var(--transicion-suave), box-shadow var(--transicion-suave);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-medio);
+        }
+        .testimonial-card blockquote {
+            font-size: 1.05rem;
+            color: var(--color-texto-principal);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            font-style: italic;
+            border: none;
+            padding: 0;
+        }
+        .testimonial-card blockquote::before {
+            content: "“";
+            font-size: 3rem;
+            color: var(--color-acento);
+            font-family: Georgia, serif;
+            display: block;
+            line-height: 0.5;
+            margin-bottom: 0.5rem;
+        }
+        .testimonial-card footer {
+            font-size: 0.95rem;
+            color: var(--color-texto-secundario);
+            text-align: right;
+        }
+        .testimonial-card footer strong {
+            display: block;
+            color: var(--color-texto-principal);
+            font-weight: 600;
+        }
 
         /* --- Sección Contacto --- */
-        #contacto { background: linear-gradient(to bottom, var(--color-light), var(--color-white)); text-align: center; }
-        #contacto p.intro { max-width: 700px; margin: 0 auto 50px auto; font-size: 1.15rem; color: var(--color-medium); }
-        .contact-methods { display: flex; justify-content: center; align-items: stretch; gap: 35px; flex-wrap: wrap; }
-        .contact-card {
-            background-color: var(--color-white); padding: 35px; border-radius: var(--border-radius);
-            box-shadow: var(--shadow-light); flex-basis: 320px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;
+        #page-contacto .contact-wrapper {
+            max-width: 700px; /* Ajustado */
+            margin: 2rem auto 0;
+            background-color: var(--color-fondo-tarjeta);
+            padding: 2.5rem; /* Ajustado */
+            border-radius: var(--border-radius-global);
+            box-shadow: var(--shadow-profundo);
+            text-align: center;
+            border: 1px solid var(--color-borde-destacado);
         }
-        .contact-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-medium); }
-        .contact-card i { font-size: 2.8rem; color: var(--color-primary); margin-bottom: 18px; }
-        .contact-card h4 { font-size: 1.4rem; margin-bottom: 12px; color: var(--color-dark); }
-        .contact-card a { color: var(--color-primary); text-decoration: none; font-weight: 600; transition: color 0.3s ease; word-break: break-all; }
-        .contact-card a:hover { color: var(--color-secondary); }
+        #page-contacto p.contact-intro {
+            font-size: 1.1rem; /* Ajustado */
+            color: var(--color-texto-secundario);
+            margin-bottom: 2rem;
+        }
+        #page-contacto .contact-form {
+            margin-top: 2rem;
+            text-align: left;
+        }
+        #page-contacto .form-group {
+            margin-bottom: 1.3rem; /* Ajustado */
+        }
+        #page-contacto .form-group label {
+            display: block;
+            margin-bottom: .4rem;
+            color: var(--color-texto-secundario);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        #page-contacto .form-group input,
+        #page-contacto .form-group textarea {
+            width: 100%;
+            padding: .8rem 1rem; /* Ajustado */
+            background-color: var(--color-fondo-secundario);
+            border: 1px solid var(--color-borde-sutil);
+            border-radius: 8px;
+            color: var(--color-texto-principal);
+            font-family: var(--font-secundaria);
+            font-size: 1rem;
+            transition: border-color var(--transicion-rapida);
+        }
+        #page-contacto .form-group input:focus,
+        #page-contacto .form-group textarea:focus {
+            border-color: var(--color-acento);
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-acento-transparente);
+        }
+        #page-contacto .form-group textarea {
+            min-height: 100px; /* Ajustado */
+            resize: vertical;
+        }
+        #page-contacto .cta-button { margin-top:0.8rem; width: 100%; }
 
-        /* Placeholder de Formulario */
-        .contact-form-placeholder {
-            margin-top: 60px; max-width: 750px; margin-left: auto; margin-right: auto;
-            background: var(--color-white); padding: 45px; border-radius: var(--border-radius);
-            box-shadow: var(--shadow-light); text-align: left;
+        #page-contacto .contact-info { margin-top: 2rem; }
+        #page-contacto .contact-info a {
+            color: var(--color-acento);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
         }
-        .contact-form-placeholder h4 { text-align: center; margin-bottom: 35px; font-size: 1.6rem; color: var(--color-dark); }
-        .form-group { margin-bottom: 22px; }
-        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; color: var(--color-medium); font-size: 0.95rem;}
-        .form-group input, .form-group textarea {
-            width: 100%; padding: 14px 18px; border: 1px solid #ced4da; border-radius: 6px;
-            font-family: var(--font-primary); font-size: 1rem; transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        #page-contacto .contact-info a:hover {
+            text-decoration: underline;
+            color: var(--color-acento-hover);
         }
-        .form-group input:focus, .form-group textarea:focus {
-            outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+        #page-contacto .contact-social-links {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
-        .form-group textarea { min-height: 130px; resize: vertical; }
-        .form-group button { width: 100%; padding: 15px; font-size: 1.05rem;} /* Usar clase .btn */
+        #page-contacto .contact-social-links a {
+            color: var(--color-texto-secundario);
+            transition: color var(--transicion-rapida), transform var(--transicion-rapida);
+        }
+        #page-contacto .contact-social-links a:hover {
+            color: var(--color-acento);
+            transform: scale(1.1);
+        }
+        #page-contacto .contact-social-links svg {
+            width: 28px; height: 28px; fill: currentColor;
+        }
 
         /* --- Footer --- */
-        footer {
-            background-color: var(--color-dark); color: rgba(255, 255, 255, 0.75);
-            text-align: center; padding: 35px 0; margin-top: 70px;
+        .main-footer {
+            background-color: var(--color-fondo-oscuro);
+            padding: 4rem 0 2rem; /* Ajustado */
+            border-top: 1px solid var(--color-borde-sutil);
         }
-        footer p { font-size: 0.95rem; margin-bottom: 5px;}
-        footer a { color: var(--color-secondary); text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-
-        /* --- Botón Volver Arriba --- */
-        #volver-arriba {
-            position: fixed; bottom: 30px; right: 30px; background-color: var(--color-primary);
-            color: var(--color-white); width: 50px; height: 50px; border-radius: 50%;
-            text-align: center; line-height: 50px; font-size: 1.3rem; box-shadow: var(--shadow-medium);
-            opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
-            z-index: 999; border: none; cursor: pointer;
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: left;
         }
-        #volver-arriba.visible { opacity: 1; visibility: visible; }
-        #volver-arriba:hover { background-color: var(--color-secondary); transform: scale(1.1); }
+        .footer-column h4 {
+            font-family: var(--font-principal);
+            font-size: 1.15rem; /* Ajustado */
+            color: var(--color-blanco);
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.4rem;
+        }
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 35px;
+            height: 2px;
+            background-color: var(--color-acento);
+            border-radius: 2px;
+        }
+        .footer-column p, .footer-column ul li {
+            font-size: 0.9rem; /* Ajustado */
+            color: var(--color-texto-secundario);
+            margin-bottom: 0.7rem;
+            line-height: 1.7;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li a {
+            color: var(--color-texto-secundario);
+            text-decoration: none;
+            transition: color var(--transicion-suave), padding-left var(--transicion-rapida);
+        }
+        .footer-column ul li a:hover {
+            color: var(--color-acento);
+            padding-left: 6px;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px; /* Ajustado */
+            color: var(--color-texto-secundario);
+            width: 35px; /* Ajustado */
+            height: 35px;
+            border: 1.5px solid var(--color-borde-sutil);
+            border-radius: 50%;
+            transition: color var(--transicion-suave), transform var(--transicion-rapida), border-color var(--transicion-suave);
+        }
+        .social-links a:hover {
+            color: var(--color-acento);
+            border-color: var(--color-acento);
+            transform: translateY(-2px) scale(1.08);
+        }
+        .social-links svg {
+            width: 18px; /* Ajustado */
+            height: 18px;
+            fill: currentColor;
+        }
 
-        /* --- Animación Fade-in --- */
-        .fade-in { opacity: 0; transform: translateY(35px); transition: opacity 0.9s ease-out, transform 0.9s ease-out; }
-        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-borde-sutil);
+        }
+        .footer-bottom .footer-logo {
+            font-family: var(--font-principal);
+            font-size: 1.7rem; /* Ajustado */
+            font-weight: 700;
+            color: var(--color-blanco);
+            text-decoration: none;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+        .footer-bottom .footer-logo span { color: var(--color-acento); }
+        .copyright {
+            font-size: 0.85rem; /* Ajustado */
+            color: var(--color-texto-secundario);
+        }
+        .footer-links-legal { /* Para enlaces de privacidad, etc. en footer */
+            list-style:none; padding:0; margin:0 0 1rem 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;
+        }
+        .footer-links-legal li a {
+            color:var(--color-texto-secundario); font-size:0.85rem; text-decoration:none;
+        }
+        .footer-links-legal li a:hover {
+            color: var(--color-acento); text-decoration: underline;
+        }
 
-        /* --- Media Queries --- */
+
+        /* --- Scroll to Top Button --- */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 25px; /* Ajustado */
+            right: 25px;
+            background: linear-gradient(45deg, var(--color-acento-gradiente-start), var(--color-acento-gradiente-end));
+            color: var(--color-fondo-oscuro); /* Texto oscuro */
+            width: 45px; /* Ajustado */
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 18px rgba(8, 217, 214, 0.2);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(25px) scale(0.8);
+            transition: opacity var(--transicion-suave), visibility var(--transicion-suave), transform var(--transicion-elastica), background-color var(--transicion-suave);
+        }
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+        .scroll-to-top:hover {
+            background: linear-gradient(45deg, var(--color-acento-hover), var(--color-acento-gradiente-end));
+            transform: scale(1.12) rotate(5deg);
+        }
+        .scroll-to-top svg {
+            width: 20px; /* Ajustado */
+            height: 20px;
+            fill: var(--color-fondo-oscuro);
+        }
+
+        /* --- Animaciones de entrada (Scroll-triggered) --- */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px); /* Ajustado */
+            transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-0 { transition-delay: 0s !important; }
+        .delay-1 { transition-delay: 0.15s !important; } /* Ajustados delays */
+        .delay-2 { transition-delay: 0.3s !important; }
+        .delay-3 { transition-delay: 0.45s !important; }
+        .delay-4 { transition-delay: 0.6s !important; }
+
+
+        /* Hero entrance animation */
+        #page-hero .hero-section .hero-content > * {
+            opacity: 0;
+            transform: translateY(35px);
+            animation: fadeInUpStaggeredHero 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+        #page-hero .hero-section .hero-content .eyebrow-text { animation-delay: 0.3s; }
+        #page-hero .hero-section .hero-content h1 { animation-delay: 0.45s; }
+        #page-hero .hero-section .hero-content p.subtitle { animation-delay: 0.6s; }
+        #page-hero .hero-section .hero-content .cta-container { animation-delay: 0.75s; }
+
+        @keyframes fadeInUpStaggeredHero {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Menu Hamburguesa para Móvil --- */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px; /* Ajustado */
+            height: 24px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+        .menu-toggle span {
+            width: 100%;
+            height: 2.5px; /* Ajustado */
+            background-color: var(--color-blanco);
+            border-radius: 5px;
+            transition: var(--transicion-elastica);
+            position: relative;
+            transform-origin: center;
+        }
+
+        /* --- Responsive --- */
         @media (max-width: 992px) {
-            .container { max-width: 960px; }
-            #hero h1 { font-size: 3.2rem; }
-            #hero p.subtitle { font-size: 1.3rem; }
-            .section-title { font-size: 2.6rem; }
-            #sobre-mi .container { flex-direction: column; align-items: center; text-align: center; gap: 40px; }
-            .about-img { flex: 0 0 auto; margin-bottom: 30px; max-width: 280px; }
-            .about-content { text-align: center; }
-            .social-links { text-align: center; }
-            .skills-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 25px; }
+            .services-grid, .projects-grid, .testimonials-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+            .footer-content {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 2rem;
+            }
+             .main-nav ul li { margin-left: 25px; }
+             .main-nav .nav-cta { margin-left: 25px; padding: 0.6rem 1.3rem;}
+             #page-sobre-mi .about-container { grid-template-columns: 1fr; text-align: center; }
+             #page-sobre-mi .about-image-wrapper { margin-right: auto; }
+
         }
+
         @media (max-width: 768px) {
-            .container { max-width: 720px; }
-            header .container { flex-direction: column; }
-            header .logo { margin-bottom: 15px; }
-            header nav ul { margin-top: 10px; padding-left: 0; justify-content: center;}
-            header nav ul li { margin: 0 12px; }
-            #hero h1 { font-size: 2.8rem; }
-            #hero p.subtitle { font-size: 1.2rem; }
-            .section-title { font-size: 2.2rem; margin-bottom: 50px; }
-            section { padding: 80px 0; }
-            .proyectos-grid { grid-template-columns: 1fr; gap: 30px; }
-             .contact-methods { flex-direction: column; align-items: center; gap: 25px;}
-             .contact-card { flex-basis: auto; width: 90%; max-width: 400px;}
-             .contact-form-placeholder { width: 90%; padding: 35px;}
+            html { font-size: 15px; }
+            .main-header { padding: 1rem 0; }
+            .main-nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: -100%;
+                height: 100vh;
+                background-color: rgba(20, 20, 23, 0.98);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 20px;
+                box-shadow: 5px 0 25px rgba(0,0,0,0.35);
+                transition: left 0.5s var(--transicion-elastica);
+                z-index: 1000;
+                overflow-y: auto;
+            }
+            .main-nav ul.active {
+                left: 0;
+                display: flex;
+            }
+            .main-nav ul li {
+                margin: 1.3rem 0; /* Ajustado */
+                width: 100%;
+                text-align: center;
+            }
+            .main-nav ul li a {
+                padding: 0.8rem; /* Ajustado */
+                display: block;
+                width: 100%;
+                font-size: 1.4rem; /* Ajustado */
+                font-weight: 600;
+                border-bottom: none;
+            }
+            .main-nav ul li a:hover,
+            .main-nav ul li a.active-link {
+                background-color: transparent;
+                color: var(--color-acento);
+            }
+            .main-nav .nav-cta {
+                margin: 2rem auto;
+                padding: 0.9rem 1.8rem;
+                font-size: 1.2rem;
+            }
+
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+            .menu-toggle.open span:nth-child(1) { transform: translateY(8.25px) rotate(45deg); } /* Ajustado */
+            .menu-toggle.open span:nth-child(2) { opacity: 0; transform: translateX(-15px) scaleX(0.5); }
+            .menu-toggle.open span:nth-child(3) { transform: translateY(-8.25px) rotate(-45deg); } /* Ajustado */
+
+            .page-content > section:first-of-type:not(.hero-section) {
+                 padding-top: calc(var(--padding-seccion-y) / 1.2 + 60px);
+                 padding-bottom: calc(var(--padding-seccion-y) / 1.2);
+            }
+             #page-hero > .hero-section {
+                padding-top: calc(120px + 60px);
+            }
+
+            .cta-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.2rem;
+            }
+            .cta-button.secondary { margin-left: 0; }
+            .footer-content { text-align: center; }
+            .footer-column h4::after { left: 50%; transform: translateX(-50%); }
+            .social-links { text-align: center; }
+            #page-sobre-mi .about-content h2.section-title { text-align: center; }
+            #page-sobre-mi .about-content .skills-list { justify-content: center; }
         }
-        @media (max-width: 576px) {
-            body { line-height: 1.6; }
-            .container { padding: 0 15px; }
-            header nav ul { flex-wrap: wrap; }
-            header nav ul li { margin: 5px 10px; }
-            #hero { padding-top: 140px; min-height: auto; padding-bottom: 60px; }
-            #hero h1 { font-size: 2.4rem; }
-            #hero p.subtitle { font-size: 1.1rem; margin-bottom: 25px; }
-            .btn { padding: 12px 28px; font-size: 1rem; }
-            .btn-secondary { margin-left: 0; margin-top: 15px; }
-            .about-img img { max-width: 220px; border-width: 5px; }
-            .about-content h3 { font-size: 1.8rem; }
-            .about-content p { font-size: 1rem; }
-            .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } /* 2 columnas en móvil */
-            .skill-item { padding: 25px 15px; }
-            .skill-item i { font-size: 3rem; }
-            .proyecto-card h4 { font-size: 1.3rem; }
-            .proyecto-card p.desc { font-size: 0.95rem;}
-            .color-palette { gap: 5px; }
-            .color-box { width: 45px; height: 45px; font-size: 0.7rem;}
-            #volver-arriba { width: 45px; height: 45px; line-height: 45px; font-size: 1.1rem; bottom: 20px; right: 20px; }
-            .contact-form-placeholder h4 { font-size: 1.4rem; }
-            .form-group input, .form-group textarea { padding: 12px 15px; font-size: 0.95rem; }
-            .form-group button { font-size: 1rem; padding: 14px;}
+
+        @media (max-width: 480px) {
+            html { font-size: 14.5px; }
+            .hero-section h1 { line-height: 1.15; letter-spacing: -1px; }
+            .service-card, .project-card, .testimonial-card { padding: 1.8rem 1.5rem; }
+            .services-grid, .projects-grid, .testimonials-grid { gap: 1.8rem; }
+            #page-contacto .contact-wrapper { padding: 2rem 1.5rem; }
+            .main-nav ul li a { font-size: 1.25rem; }
+            .main-nav .nav-cta { font-size: 1.05rem; }
         }
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
+        .hidden-content { display: none !important; }
+
+
+
+
+
+/* --- Estilos para Secciones de Home Adicionales --- */
+.home-intro-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+@media (min-width: 992px) {
+    .home-intro-section .container {
+        grid-template-columns: minmax(300px, 400px) 1fr; /* Imagen a la izquierda, texto a la derecha */
+        gap: 3rem;
+    }
+    .intro-image-side { order: 1; } /* Imagen primero en desktop */
+    .intro-text-side { order: 2; }
+}
+.intro-image-side {
+    text-align: center;
+}
+.intro-image-actual {
+    width: 100%;
+    max-width: 400px; /* Ajusta según necesites */
+    height: auto;
+    border-radius: var(--border-radius-global);
+    object-fit: cover;
+    margin: 0 auto;
+    box-shadow: var(--shadow-medio);
+}
+.intro-text-side h2 { text-align: left; margin-bottom: 1rem; }
+.intro-text-side p { margin-bottom: 1.5rem; color: var(--color-texto-secundario); font-size: 1.05rem;}
+
+
+#home-services-teaser .service-card p {
+    -webkit-line-clamp: 3; /* Limitar a 3 líneas en el teaser */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.cta-learn-more-home {
+    display: inline-block;
+    margin-top: auto;
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color var(--transicion-suave), letter-spacing var(--transicion-rapida);
+}
+.cta-learn-more-home:hover {
+    color: var(--color-acento-hover);
+    letter-spacing: 0.8px;
+}
+
+.view-all-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.home-final-cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-acento-gradiente-start) 0%, var(--color-acento-gradiente-end) 100%);
+    color: var(--color-fondo-oscuro); /* Texto oscuro para contraste */
+    padding: var(--padding-seccion-y) 20px;
+    border-radius: var(--border-radius-global);
+    margin-top: var(--padding-seccion-y);
+    margin-bottom: var(--padding-seccion-y); /* Añadido para espaciado */
+}
+.home-final-cta-section .section-title, .home-final-cta-section .section-subtitle {
+    color: var(--color-fondo-oscuro);
+    text-shadow: none; /* Quitar sombra si el fondo es claro */
+}
+.home-final-cta-section .section-title .highlight {
+   color: var(--color-blanco) !important; /* Para que el highlight resalte sobre el fondo de acento */
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.home-final-cta-section .cta-button {
+    background: var(--color-blanco);
+    color: var(--color-acento) !important; /* Texto de acento */
+    box-shadow: var(--shadow-medio);
+}
+ .home-final-cta-section .cta-button:hover {
+    background: #f0f0f0;
+    color: var(--color-acento-hover) !important;
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+/* Ajustes para móviles en las nuevas secciones de home */
+@media (max-width: 992px) {
+    .home-intro-section .container {
+        text-align: center;
+    }
+    .intro-text-side h2 { text-align: center; }
+    .intro-image-side { order: 1; margin-bottom: 2rem; }
+    .intro-text-side { order: 2; }
+}
+
+
+
 
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="main-header">
+    <header class="main-header" id="mainHeader">
         <div class="container">
-            <a href="#hero" class="logo">Sofia<span>V.</span></a>
-            <nav>
-                <ul>
-                    <li><a href="#hero" class="active">Inicio</a></li>
-                    <li><a href="#sobre-mi">Sobre Mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+            <a href="#hero" class="logo page-nav-link" aria-label="Marco Segura - Trafficker Digital - Inicio">Marco<span>.</span>Segura</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="mainMenu">
+                    <li><a href="#hero" class="active-link page-nav-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="page-nav-link">Sobre Mí</a></li>
+                    <li><a href="#servicios" class="page-nav-link">Servicios</a></li>
+                    <li><a href="#proyectos" class="page-nav-link">Proyectos</a></li>
+                    <li><a href="#testimonios" class="page-nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-cta page-nav-link">Contactar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Hero -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hola, soy <span>Sofia Villanueva</span></h1>
-            <p class="subtitle">Desarrolladora de Software Senior | Especialista en soluciones web robustas y escalables | Python, JavaScript, PHP.</p>
-            <a href="#proyectos" class="btn">Ver Proyectos</a>
-            <a href="#contacto" class="btn btn-secondary">Contactar</a>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="fade-in">
-        <div class="container">
-             <div class="about-img">
-                <img src="https://via.placeholder.com/320/4a90e2/ffffff?text=Sofia+V" alt="Foto de Sofia Villanueva">
-            </div>
-            <div class="about-content">
-                <h2 class="section-title" style="text-align: left; margin-bottom: 25px;">Sobre Mí</h2>
-                <h3>Arquitecta de Soluciones Digitales con Enfoque en Rendimiento y Experiencia</h3>
-                <p>
-                    Como <span class="highlight">Desarrolladora de Software Senior</span>, poseo una amplia experiencia en el ciclo completo de desarrollo, desde la concepción y arquitectura hasta la implementación y despliegue de aplicaciones web complejas. Mi pasión radica en resolver problemas desafiantes y entregar productos de alta calidad que superen las expectativas.
-                </p>
-                <p>
-                    Con un dominio profundo de tecnologías backend como <span class="highlight">Python (Flask/Django)</span> y <span class="highlight">PHP</span>, junto con bases de datos <span class="highlight">MySQL</span>, y una sólida experiencia en el frontend con <span class="highlight">JavaScript</span> y frameworks modernos como <span class="highlight">React</span>, busco crear sistemas eficientes, mantenibles y escalables. Me considero una profesional proactiva, colaborativa y siempre dispuesta a aprender y adoptar nuevas tecnologías.
-                </p>
-                 <div class="social-links">
-                     <a href="https://www.linkedin.com/in/sofia-villanueva-placeholder" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                     <a href="https://github.com/sofiavilla-placeholder" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                     <a href="mailto:sofia.villanueva.dev@email.com" title="Email"><i class="fas fa-envelope"></i></a>
-                     <!-- Añade más enlaces si es necesario -->
-                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Habilidades -->
-    <section id="habilidades" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Stack Tecnológico</h2>
-            <div class="skills-grid">
-                <div class="skill-item python">
-                    <i class="fab fa-python"></i>
-                    <h4>Python</h4>
-                </div>
-                 <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <h4>React</h4>
-                </div>
-                 <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <h4>JavaScript (ES6+)</h4>
-                </div>
-                 <div class="skill-item php">
-                    <i class="fab fa-php"></i>
-                    <h4>PHP</h4>
-                </div>
-                 <div class="skill-item db">
-                     <i class="fas fa-database"></i>
-                    <h4>MySQL</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <h4>HTML5</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <h4>CSS3 & SASS</h4>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <h4>Git & GitHub</h4>
-                </div>
-                 <div class="skill-item">
-                    <i class="fas fa-server"></i>
-                    <h4>APIs RESTful</h4>
-                </div>
-                 <div class="skill-item">
-                    <i class="fas fa-cloud"></i>
-                    <h4>Cloud (Básico AWS/GCP)</h4>
-                </div>
-                 <div class="skill-item">
-                     <i class="fas fa-vial"></i>
-                    <h4>Testing (Unit/Integ)</h4>
-                </div>
-                 <div class="skill-item">
-                     <i class="fas fa-sitemap"></i>
-                    <h4>Arquitectura Software</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Proyectos Relevantes</h2>
-            <div class="proyectos-grid">
-
-                 <!-- Proyecto Python -->
-                 <div class="proyecto-card python-project-card">
-                    <div class="proyecto-content">
-                        <h4><i class="fab fa-python"></i> API de Análisis de Sentimiento</h4>
-                        <p class="desc">Desarrollo de una API RESTful con Flask (Python) que procesa texto y devuelve un análisis de sentimiento (positivo, negativo, neutro) utilizando bibliotecas NLTK/spaCy. Incluye endpoints seguros, manejo de errores y documentación con Swagger.</p>
-                        <div class="tech-tags">
-                            <span class="python">Python</span><span>Flask</span><span>NLTK</span><span class="api">API REST</span><span>JWT</span>
+    <main id="main-content">
+        <!-- PAGE: HERO (HOME PAGE) -->
+        <!-- PAGE: HERO (HOME PAGE) -->
+        <div id="page-hero" class="page-content" style="display: block;">
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="eyebrow-text">Trafficker Digital Estratégico</span>
+                        <h1 id="hero-title">Soy Marco Segura, y Convierto Clics en <span class="highlight">Clientes Rentables</span></h1>
+                        <p class="subtitle">Diseño y ejecuto campañas de publicidad online que no solo atraen tráfico, sino que generan conversiones medibles y maximizan tu retorno de inversión. ¿Listo para escalar tu negocio?</p>
+                        <div class="cta-container">
+                            <a href="#proyectos" class="cta-button page-nav-link">Ver Mis Proyectos
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                            </a>
+                            <a href="#contacto" class="cta-button secondary page-nav-link">Hablemos de tu Estrategia</a>
                         </div>
                     </div>
                 </div>
+                 <a href="#home-intro" class="hero-scroll-down page-nav-link" aria-label="Descubrir más sobre Marco Segura">
+                    Descubre Más
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                </a>
+            </section>
 
-                 <!-- Proyecto To-Do List -->
-                <div class="proyecto-card">
-                    <div class="proyecto-content">
-                        <h4><i class="fas fa-list-check"></i> Gestor de Tareas Interactivo</h4>
-                        <p class="desc">Una aplicación clásica de lista de tareas pendientes construida con JavaScript puro. Permite añadir, eliminar y marcar tareas como completadas. Demuestra manipulación avanzada del DOM y gestión de estado local.</p>
-                         <div class="tech-tags">
-                            <span class="js">JavaScript</span><span>HTML5</span><span>CSS3</span><span>DOM</span>
+            <!-- NUEVA SECCIÓN: INTRODUCCIÓN BREVE -->
+            <section id="home-intro" class="section-padding home-intro-section">
+                <div class="container">
+                    <div class="intro-image-side animate-on-scroll delay-1">
+                        <img src="https://via.placeholder.com/450x520/1A1A1E/08D9D6?text=Marco+Segura+Estrategia" alt="Marco Segura trabajando en una estrategia de tráfico digital" class="intro-image-actual">
+                    </div>
+                    <div class="intro-text-side animate-on-scroll">
+                        <h2 class="section-title" style="text-align: left;">Impulsando Negocios con <span class="highlight">Tráfico Inteligente</span></h2>
+                        <p>¡Hola! Soy Marco Segura, y mi especialidad es el mundo del tráfico pago. Ayudo a emprendedores y empresas a destacar en el competitivo entorno digital, transformando inversiones publicitarias en crecimiento real y sostenible. Mi enfoque es analítico, creativo y 100% orientado a resultados.</p>
+                        <p>No se trata solo de atraer visitantes, sino de conectar tu marca con la audiencia correcta, en el momento preciso y con el mensaje adecuado para convertir prospectos en clientes fieles. Si buscas optimizar tus campañas, explorar nuevas plataformas o simplemente entender cómo la publicidad online puede llevar tu negocio al siguiente nivel, estás en el lugar indicado.</p>
+                        <a href="#sobre-mi" class="cta-button secondary page-nav-link" style="margin-left:0; margin-top: 1rem;">Conóceme Mejor</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NUEVA SECCIÓN: SERVICIOS DESTACADOS -->
+            <section id="home-services-teaser" class="section-padding bg-secondary">
+                <div class="container">
+                    <h2 class="section-title animate-on-scroll">Mis <span class="highlight">Servicios Clave</span> para tu Éxito</h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">Un vistazo a cómo puedo ayudarte a alcanzar tus metas. Ofrezco un espectro de servicios de tráfico pago para cubrir tus necesidades publicitarias.</p>
+                    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin-left:auto; margin-right:auto;">
+                        <article class="service-card animate-on-scroll delay-2" aria-labelledby="home-servicio-meta">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2.04c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2v-2zm0 4h2v6h-2v-6z"/></svg></div>
+                            <h3 id="home-servicio-meta">Campañas en Meta Ads</h3>
+                            <p>Estrategias efectivas en Facebook e Instagram Ads para alcanzar a tu audiencia ideal, generar leads y aumentar ventas con un ROAS optimizado.</p>
+                            <a href="#servicios" class="cta-learn-more-home page-nav-link">Ver Detalles →</a>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-3" aria-labelledby="home-servicio-google">
+                             <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21.49 9.25h-9.3v3.58h5.28c-.23 1.16-.93 2.16-1.98 2.84v2.36c2.14-1.03 3.78-3.13 3.78-5.74 0-.64-.07-1.25-.18-1.84zM3.51 9.25c0 1.82.71 3.49 1.87 4.75l-2.36 1.83C1.7 14.15 1 11.81 1 9.25s.7-4.9 2.02-6.63l2.36 1.83C4.22 5.76 3.51 7.43 3.51 9.25zM12 4.03c1.75 0 3.3.61 4.53 1.79l2.75-2.75C17.3.66 14.81 0 12 0 8.74 0 5.86.93 3.51 2.51l2.36 1.83C7.1 3.03 9.39 4.03 12 4.03z"/></svg></div>
+                            <h3 id="home-servicio-google">Publicidad en Google Ads</h3>
+                            <p>Posiciona tu negocio en la cima de los resultados de búsqueda. Campañas de Search, Display, YouTube y Shopping para captar clientes en el momento justo.</p>
+                             <a href="#servicios" class="cta-learn-more-home page-nav-link">Descubrir Estrategias →</a>
+                        </article>
+                         <article class="service-card animate-on-scroll delay-4" aria-labelledby="home-servicio-cro">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 3c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm5.5 1L16 9.5l-1.79 1.79 1.29 1.29L17.5 11zM6.71 12.71L8 11.41l-1.79-1.79-1.5 1.5z"/></svg></div>
+                            <h3 id="home-servicio-cro">Optimización y Analítica</h3>
+                            <p>No solo lanzo campañas, las optimizo. Análisis de datos, A/B testing y mejora continua para maximizar tus conversiones y el ROAS.</p>
+                            <a href="#servicios" class="cta-learn-more-home page-nav-link">Explorar Optimización →</a>
+                        </article>
+                    </div>
+                     <div class="view-all-cta animate-on-scroll delay-3">
+                        <a href="#servicios" class="cta-button page-nav-link">Ver Todos Mis Servicios</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NUEVA SECCIÓN: PROYECTO DESTACADO -->
+            <section id="home-project-teaser" class="section-padding">
+                 <div class="container">
+                    <h2 class="section-title animate-on-scroll">Un <span class="highlight">Caso de Éxito</span> Reciente</h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">Este es un ejemplo de cómo mis estrategias de tráfico han generado un impacto real. Cada cliente tiene una historia única.</p>
+                    <div class="projects-grid" style="max-width: 700px; margin-left:auto; margin-right:auto;"> <!-- Solo una tarjeta, centrada -->
+                         <article class="project-card animate-on-scroll delay-2" aria-labelledby="home-project-modanova-title">
+                            <div class="project-card-image-wrapper">
+                                <div class="project-card-image-placeholder" style="background-image: url('https://via.placeholder.com/600x400/1A1A1E/08D9D6?text=ModaNova+Caso+Éxito');" alt="Caso de éxito ModaNova"></div>
+                            </div>
+                            <div class="project-card-content">
+                                <span class="project-category">E-commerce / Meta Ads</span>
+                                <h3 id="home-project-modanova-title">ModaNova: Disparando el ROAS</h3>
+                                <p class="excerpt">Reestructuración de campañas en Meta Ads que resultó en un <strong>aumento del 150% en ROAS</strong> y un <strong>70% más de ventas online</strong> para esta tienda de moda.</p>
+                                <a href="#project-item-modanova" class="project-link page-nav-link"
+                                   data-project-id="modanova"
+                                   data-project-title="Incremento de Ventas para ModaNova (E-commerce)"
+                                   data-project-category="E-commerce / Moda"
+                                   data-project-client="ModaNova (Tienda Online de Moda)"
+                                   data-project-platforms="Meta Ads (Facebook/Instagram), Google Shopping"
+                                   data-project-image="https://via.placeholder.com/800x450/1A1A1E/08D9D6?text=ModaNova+Proyecto"
+                                   data-project-challenge-selector="#modanova-challenge"
+                                   data-project-solution-selector="#modanova-solution"
+                                   data-project-results-selector="#modanova-results"
+                                >Leer Caso Completo →</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="view-all-cta animate-on-scroll delay-3">
+                        <a href="#proyectos" class="cta-button page-nav-link">Explorar Más Proyectos</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- NUEVA SECCIÓN: LLAMADA A LA ACCIÓN FINAL -->
+            <section id="home-final-cta" class="home-final-cta-section animate-on-scroll">
+                <div class="container">
+                    <h2 class="section-title">¿Listo para que tus Anuncios <span class="highlight" style="color:var(--color-blanco); text-shadow: 1px 1px 2px var(--color-fondo-oscuro);">Trabajen para Ti</span>?</h2>
+                    <p class="section-subtitle" style="margin-bottom:2.5rem;">Deja de perder dinero en campañas que no funcionan. Hablemos de tu negocio, tus objetivos y cómo mis estrategias de tráfico pueden ayudarte a crecer.</p>
+                    <a href="#contacto" class="cta-button page-nav-link" style="background: var(--color-blanco); color: var(--color-acento) !important;">Solicita tu Auditoría Gratuita</a>
+                </div>
+            </section>
+        </div>
+
+        
+
+        <!-- PAGE: SOBRE MÍ -->
+        <div id="page-sobre-mi" class="page-content" style="display: none;">
+            <section class="section-padding" aria-labelledby="sobre-mi-title">
+                <div class="container about-container">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <img src="https://via.placeholder.com/350x350/1A1A1E/08D9D6?text=Marco+Segura" alt="Foto de Marco Segura, Trafficker Digital" class="about-image">
+                    </div>
+                    <div class="about-content">
+                        <h2 id="sobre-mi-title" class="section-title animate-on-scroll">Hola, soy <span class="highlight">Marco Segura</span></h2>
+                        <p class="animate-on-scroll delay-1">Apasionado por el marketing digital y especializado en la gestión de tráfico pago (PPC). Mi misión es ayudar a negocios como el tuyo a alcanzar sus objetivos de crecimiento a través de estrategias de publicidad online inteligentes, medibles y altamente rentables. Con [X] años de experiencia en el sector, he gestionado presupuestos de todo tipo y he trabajado con clientes de diversas industrias, siempre enfocado en maximizar el Retorno de la Inversión Publicitaria (ROAS).</p>
+                        <p class="animate-on-scroll delay-2">Creo firmemente en un enfoque basado en datos, la optimización constante y la transparencia total con mis clientes. No se trata solo de generar clics, sino de atraer al público correcto, convertirlo en cliente y construir relaciones a largo plazo. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias y herramientas de las principales plataformas publicitarias.</p>
+                        <h3 style="font-family:var(--font-principal); font-size:1.5rem; color:var(--color-blanco); margin-bottom:1rem; margin-top:2rem;" class="animate-on-scroll delay-3">Mis Habilidades Clave:</h3>
+                        <ul class="skills-list animate-on-scroll delay-4">
+                            <li>Meta Ads (Facebook & Instagram)</li>
+                            <li>Google Ads (Search, Display, YouTube, Shopping)</li>
+                            <li>TikTok Ads</li>
+                            <li>LinkedIn Ads</li>
+                            <li>Optimización de Embudos (Funnels)</li>
+                            <li>Investigación de Audiencias</li>
+                            <li>Copywriting Persuasivo</li>
+                            <li>A/B Testing</li>
+                            <li>Google Analytics 4</li>
+                            <li>Pixel y Tag Management</li>
+                            <li>Análisis de Métricas y KPIs</li>
+                            <li>Estrategia de Contenido para Ads</li>
+                        </ul>
+                         <div style="margin-top: 2.5rem;" class="animate-on-scroll delay-4">
+                            <a href="#contacto" class="cta-button page-nav-link">¿Trabajamos Juntos?</a>
                         </div>
-                        <div class="app-container">
-                             <div class="todo-input-group">
-                                <input type="text" id="todo-input" placeholder="Añadir nueva tarea...">
-                                <button id="add-todo-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: SERVICIOS -->
+        <div id="page-servicios" class="page-content" style="display: none;">
+            <section class="section-padding bg-secondary" aria-labelledby="servicios-title">
+                <div class="container">
+                    <h2 id="servicios-title" class="section-title animate-on-scroll">¿Cómo Puedo <span class="highlight">Ayudarte</span>?</h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">Ofrezco un conjunto completo de servicios de tráfico pago diseñados para impulsar tu visibilidad, atraer clientes potenciales cualificados y aumentar tus ventas de manera sostenible.</p>
+                    <div class="services-grid">
+                        <article class="service-card animate-on-scroll delay-2" aria-labelledby="servicio-meta-ads">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2.04c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2v-2zm0 4h2v6h-2v-6z"/></svg></div>
+                            <h3 id="servicio-meta-ads">Gestión de Campañas en Meta Ads</h3>
+                            <p>Creación, optimización y seguimiento de campañas en Facebook e Instagram Ads. Segmentación avanzada, A/B testing de creativos y copys, y enfoque en objetivos (ventas, leads, branding).</p>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-3" aria-labelledby="servicio-google-ads">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M21.49 9.25h-9.3v3.58h5.28c-.23 1.16-.93 2.16-1.98 2.84v2.36c2.14-1.03 3.78-3.13 3.78-5.74 0-.64-.07-1.25-.18-1.84zM3.51 9.25c0 1.82.71 3.49 1.87 4.75l-2.36 1.83C1.7 14.15 1 11.81 1 9.25s.7-4.9 2.02-6.63l2.36 1.83C4.22 5.76 3.51 7.43 3.51 9.25zM12 4.03c1.75 0 3.3.61 4.53 1.79l2.75-2.75C17.3.66 14.81 0 12 0 8.74 0 5.86.93 3.51 2.51l2.36 1.83C7.1 3.03 9.39 4.03 12 4.03z"/></svg></div>
+                            <h3 id="servicio-google-ads">Campañas en Google Ads (SEM/PPC)</h3>
+                            <p>Maximiza tu visibilidad en el buscador más grande. Campañas de Búsqueda, Display, YouTube, Shopping y Performance Max. Investigación de keywords, optimización de Quality Score y anuncios efectivos.</p>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-4" aria-labelledby="servicio-tiktok-ads">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 0 .17.01.23.05.27.17.42.43.42.72v11.24c0 .29-.16.55-.42.72-.06.04-.14.05-.23.05h-3.91c-.61 0-1.13.25-1.51.67-.33.36-.5.84-.5 1.37v4.31c0 .29-.16.55-.42.72s-.36.16-.55.11c-.71-.18-1.33-.51-1.83-.99-.35-.33-.61-.73-.77-1.18-.17-.46-.24-.95-.24-1.41v-6.47c0-3.44-2.12-6.58-5.3-7.84-.31-.12-.48-.44-.48-.78s.17-.66.48-.78c3.18-1.25 5.3-4.4 5.3-7.84 0-.15.02-.3.05-.45.04-.15.1-.28.18-.4.13-.18.32-.32.53-.4.1-.04.19-.05.28-.05.38-.01.77-.01 1.15-.01z"/></svg></div>
+                            <h3 id="servicio-tiktok-ads">Publicidad en TikTok y Otras Redes</h3>
+                            <p>Conecta con audiencias más jóvenes y aprovecha el poder del video corto. Estrategias creativas para TikTok Ads. También gestiono campañas en LinkedIn Ads para B2B y otras plataformas emergentes.</p>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-2" aria-labelledby="servicio-optimizacion">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 3c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm5.5 1L16 9.5l-1.79 1.79 1.29 1.29L17.5 11zM6.71 12.71L8 11.41l-1.79-1.79-1.5 1.5z"/></svg></div>
+                            <h3 id="servicio-optimizacion">Optimización de Embudos y CRO</h3>
+                            <p>Analizo y mejoro tu embudo de conversión, desde el anuncio hasta la landing page y la venta. Pruebas A/B, optimización de páginas de destino y estrategias para aumentar la tasa de conversión (CRO).</p>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-3" aria-labelledby="servicio-analitica">
+                             <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                            <h3 id="servicio-analitica">Analítica y Reporting Avanzado</h3>
+                            <p>Implementación de seguimiento (Pixel, Google Analytics 4), creación de dashboards personalizados e informes detallados. Tomo decisiones basadas en datos para optimizar continuamente tus campañas y tu ROAS.</p>
+                        </article>
+                        <article class="service-card animate-on-scroll delay-4" aria-labelledby="servicio-consultoria-trafico">
+                            <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1.07 16.09C6.63 16.05 4 12.79 4 9.03V6.14l7-3.1v10.4l-2.09-1.04-.41.99 2.5 1.26v1.41zm2.14 0V10.03l7-3.89v4.91c0 3.73-2.62 7-6.07 8.05z"/></svg></div>
+                            <h3 id="servicio-consultoria-trafico">Consultoría y Auditoría de Tráfico</h3>
+                            <p>¿Ya tienes campañas activas pero no dan resultados? Realizo auditorías exhaustivas de tus cuentas publicitarias y te ofrezco un plan de acción claro para mejorar el rendimiento y escalar tus resultados.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: PROYECTOS -->
+        <div id="page-proyectos" class="page-content" style="display: none;">
+            <section class="section-padding" aria-labelledby="proyectos-title">
+                <div class="container">
+                    <h2 id="proyectos-title" class="section-title animate-on-scroll">Casos de <span class="highlight">Éxito</span></h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">Descubre cómo he ayudado a empresas a alcanzar sus objetivos a través de estrategias de tráfico pago efectivas. Cada proyecto es una historia de colaboración, análisis y resultados medibles.</p>
+                    <div class="projects-grid">
+                        <!-- Proyecto 1 -->
+                        <article class="project-card animate-on-scroll delay-2" aria-labelledby="proyecto1-title">
+                            <div class="project-card-image-wrapper">
+                                <div class="project-card-image-placeholder" style="background-image: url('https://via.placeholder.com/600x400/1A1A1E/08D9D6?text=Proyecto+E-commerce');" alt="Caso de éxito E-commerce"></div>
+                            </div>
+                            <div class="project-card-content">
+                                <span class="project-category">E-commerce / Moda</span>
+                                <h3 id="proyecto1-title">Incremento de Ventas para "ModaNova"</h3>
+                                <p class="excerpt">Desafío: Bajas ventas online y alto Costo por Adquisición (CPA) para una tienda de moda. Solución: Reestructuración de campañas en Meta Ads y Google Shopping...</p>
+                                <a href="#project-item-modanova" class="project-link page-nav-link"
+                                   data-project-id="modanova"
+                                   data-project-title="Incremento de Ventas para ModaNova (E-commerce)"
+                                   data-project-category="E-commerce / Moda"
+                                   data-project-client="ModaNova (Tienda Online de Moda)"
+                                   data-project-platforms="Meta Ads (Facebook/Instagram), Google Shopping"
+                                   data-project-image="https://via.placeholder.com/800x450/1A1A1E/08D9D6?text=ModaNova+Proyecto"
+                                   data-project-challenge-selector="#modanova-challenge"
+                                   data-project-solution-selector="#modanova-solution"
+                                   data-project-results-selector="#modanova-results"
+                                >Ver Caso de Estudio →</a>
+                            </div>
+                        </article>
+                        <!-- Proyecto 2 -->
+                        <article class="project-card animate-on-scroll delay-3" aria-labelledby="proyecto2-title">
+                            <div class="project-card-image-wrapper">
+                                <div class="project-card-image-placeholder" style="background-image: url('https://via.placeholder.com/600x400/141417/FFFFFF?text=Proyecto+Lead+Gen');" alt="Caso de éxito Generación de Leads"></div>
+                            </div>
+                            <div class="project-card-content">
+                                <span class="project-category">Lead Generation / SaaS</span>
+                                <h3 id="proyecto2-title">Leads Cualificados para "SaaSify Tech"</h3>
+                                <p class="excerpt">Desafío: Pocos leads y de baja calidad para una empresa SaaS B2B. Solución: Campañas en LinkedIn Ads y Google Search Ads enfocadas en audiencias de nicho...</p>
+                                <a href="#project-item-saasify" class="project-link page-nav-link"
+                                   data-project-id="saasify"
+                                   data-project-title="Generación de Leads Cualificados para SaaSify Tech"
+                                   data-project-category="Lead Generation / SaaS B2B"
+                                   data-project-client="SaaSify Tech (Software como Servicio)"
+                                   data-project-platforms="LinkedIn Ads, Google Search Ads"
+                                   data-project-image="https://via.placeholder.com/800x450/141417/FFFFFF?text=SaaSify+Proyecto"
+                                   data-project-challenge-selector="#saasify-challenge"
+                                   data-project-solution-selector="#saasify-solution"
+                                   data-project-results-selector="#saasify-results"
+                                >Ver Caso de Estudio →</a>
+                            </div>
+                        </article>
+                        <!-- Proyecto 3 (Placeholder) -->
+                        <article class="project-card animate-on-scroll delay-4" aria-labelledby="proyecto3-title">
+                            <div class="project-card-image-wrapper">
+                                <div class="project-card-image-placeholder" style="background-image: url('https://via.placeholder.com/600x400/0A0A0C/B8B8B8?text=Proyecto+Local');" alt="Caso de éxito Negocio Local"></div>
+                            </div>
+                            <div class="project-card-content">
+                                <span class="project-category">Negocio Local / Servicios</span>
+                                <h3 id="proyecto3-title">Aumento de Citas para "Clínica Bienestar"</h3>
+                                <p class="excerpt">Desafío: Poca visibilidad local y dificultad para agendar citas para una clínica de fisioterapia. Solución: Campañas de Google Ads Local y Meta Ads con segmentación geográfica...</p>
+                                <a href="#project-item-bienestar" class="project-link page-nav-link"
+                                   data-project-id="bienestar"
+                                   data-project-title="Aumento de Citas para Clínica Bienestar"
+                                   data-project-category="Negocio Local / Servicios de Salud"
+                                   data-project-client="Clínica Bienestar (Fisioterapia)"
+                                   data-project-platforms="Google Ads (Local, Search), Meta Ads"
+                                   data-project-image="https://via.placeholder.com/800x450/0A0A0C/B8B8B8?text=Bienestar+Proyecto"
+                                   data-project-challenge-selector="#bienestar-challenge"
+                                   data-project-solution-selector="#bienestar-solution"
+                                   data-project-results-selector="#bienestar-results"
+                                >Ver Caso de Estudio →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: SINGLE PROJECT (Template) -->
+        <div id="page-single-project" class="page-content" style="display: none;">
+            <section class="section-padding" aria-labelledby="single-project-title-placeholder">
+                 <div class="container" style="max-width: 900px;">
+                    <a href="#proyectos" class="back-to-projects-link page-nav-link animate-on-scroll">← Volver a Proyectos</a>
+                    <h1 id="single-project-title-placeholder" class="section-title animate-on-scroll" style="text-align:left; font-size: clamp(2rem, 5vw, 3rem); margin-bottom:0.5rem;">Nombre del Proyecto</h1>
+                    <p id="single-project-category-placeholder" class="section-subtitle animate-on-scroll delay-1" style="text-align:left; margin-left:0; margin-bottom:2rem; font-weight:500; color:var(--color-acento);">Categoría del Proyecto</p>
+
+                    <img id="single-project-image-placeholder" src="https://via.placeholder.com/800x450/1A1A1E/08D9D6?text=Imagen+Proyecto" alt="Imagen principal del proyecto" class="project-header-image animate-on-scroll delay-1">
+
+                    <div class="project-meta-info animate-on-scroll delay-2">
+                        <h4>Información Clave del Proyecto</h4>
+                        <ul id="single-project-meta-list">
+                            <li><strong>Cliente:</strong> <span id="project-client-placeholder">Nombre del Cliente</span></li>
+                            <li><strong>Plataformas Usadas:</strong> <span id="project-platforms-placeholder">Meta Ads, Google Ads</span></li>
+                            <li><strong>Duración:</strong> <span id="project-duration-placeholder">[Duración de la campaña]</span></li>
+                            <li><strong>Objetivo Principal:</strong> <span id="project-objective-placeholder">[Objetivo principal]</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="project-content-section animate-on-scroll delay-3">
+                        <h3>El Desafío</h3>
+                        <div id="single-project-challenge-placeholder"><p>Descripción del desafío o problema que enfrentaba el cliente.</p></div>
+                    </div>
+
+                    <div class="project-content-section animate-on-scroll delay-3">
+                        <h3>Mi Estrategia y Solución</h3>
+                        <div id="single-project-solution-placeholder"><p>Detalles de la estrategia implementada, las acciones tomadas, y cómo se abordó el desafío.</p></div>
+                    </div>
+
+                    <div class="project-content-section animate-on-scroll delay-4">
+                        <h3>Resultados Obtenidos <span class="highlight" style="font-size: 1.1em;">🚀</span></h3>
+                        <div id="single-project-results-placeholder"><p>KPIs clave y resultados medibles logrados gracias a la campaña.</p></div>
+                    </div>
+                     <div class="animate-on-scroll delay-4" style="margin-top: 3rem; text-align: center;">
+                         <a href="#contacto" class="cta-button page-nav-link">¿Tienes un Desafío Similar? Hablemos</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: TESTIMONIOS -->
+        <div id="page-testimonios" class="page-content" style="display: none;">
+            <section class="section-padding bg-secondary" aria-labelledby="testimonios-title">
+                <div class="container">
+                    <h2 id="testimonios-title" class="section-title animate-on-scroll">Lo Que Dicen Mis <span class="highlight">Clientes</span></h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">La confianza y los resultados son la base de mi trabajo. Aquí algunos testimonios de clientes satisfechos con el impacto de mis estrategias de tráfico pago.</p>
+                    <div class="testimonials-grid">
+                        <article class="testimonial-card animate-on-scroll delay-2">
+                            <blockquote>Marco transformó nuestras campañas. Pasamos de gastar sin rumbo a tener un ROAS que superó todas nuestras expectativas. ¡Totalmente recomendado!</blockquote>
+                            <footer>
+                                <strong>Ana Torres</strong>
+                                CEO, ModaNova E-commerce
+                            </footer>
+                        </article>
+                        <article class="testimonial-card animate-on-scroll delay-3">
+                            <blockquote>Necesitábamos leads de calidad para nuestro SaaS y Marco lo consiguió. Su enfoque estratégico en LinkedIn Ads fue clave. Ahora nuestro equipo de ventas está más ocupado que nunca.</blockquote>
+                            <footer>
+                                <strong>Carlos Vega</strong>
+                                Director de Marketing, SaaSify Tech
+                            </footer>
+                        </article>
+                        <article class="testimonial-card animate-on-scroll delay-4">
+                            <blockquote>Como negocio local, la publicidad online nos parecía complicada. Marco nos guio en todo el proceso y ahora recibimos un flujo constante de nuevos pacientes gracias a sus campañas.</blockquote>
+                            <footer>
+                                <strong>Laura Gómez</strong>
+                                Gerente, Clínica Bienestar
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: CONTACTO -->
+        <div id="page-contacto" class="page-content" style="display: none;">
+            <section class="section-padding" aria-labelledby="contacto-title">
+                <div class="container">
+                    <h2 id="contacto-title" class="section-title animate-on-scroll">¿Listo para Impulsar <span class="highlight">Tu Negocio</span>?</h2>
+                    <p class="section-subtitle animate-on-scroll delay-1">Si buscas un Trafficker Digital comprometido con tus resultados, que hable tu idioma y entienda tus necesidades, estás en el lugar correcto. Cuéntame sobre tu proyecto y veamos cómo puedo ayudarte a alcanzar tus metas.</p>
+                    <div class="contact-wrapper animate-on-scroll delay-2">
+                        <p class="contact-intro">Completa el formulario o contáctame directamente. ¡Espero con ansias conocer tu proyecto!</p>
+                        <form action="#" method="POST" class="contact-form" id="contactFormPortfolio">
+                            <div class="form-group">
+                                <label for="contact-name-portfolio">Tu Nombre</label>
+                                <input type="text" id="contact-name-portfolio" name="name" required placeholder="Ej: Juan Pérez">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email-portfolio">Tu Correo Electrónico</label>
+                                <input type="email" id="contact-email-portfolio" name="email" required placeholder="Ej: juan.perez@empresa.com">
+                            </div>
+                             <div class="form-group">
+                                <label for="contact-company-portfolio">Nombre de tu Empresa (Opcional)</label>
+                                <input type="text" id="contact-company-portfolio" name="company" placeholder="Ej: Mi Negocio Increíble">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message-portfolio">Cuéntame sobre tu Proyecto</label>
+                                <textarea id="contact-message-portfolio" name="message" rows="5" required placeholder="¿Cuáles son tus objetivos? ¿Qué desafíos enfrentas?..."></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Enviar Mensaje</button>
+                        </form>
+                        <div class="contact-info" style="margin-top:2.5rem;">
+                             <p style="margin-bottom: 1rem;"><strong>Email:</strong> <a href="mailto:marco.segura.trafficker@email.com" aria-label="Enviar correo a marco.segura.trafficker@email.com">marco.segura.trafficker@email.com</a></p>
+                             <p style="margin-bottom: 1.5rem;"><strong>Teléfono/WhatsApp:</strong> <a href="https://wa.me/NUMERODETELEFONO" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">+XX XXX XXX XXX</a> (Reemplaza NUMERODETELEFONO)</p>
+                             <div class="contact-social-links">
+                                <a href="https://linkedin.com/in/tuperfil" target="_blank" rel="noopener noreferrer" aria-label="Marco Segura en LinkedIn">
+                                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </a>
+                                <!-- Añade más redes si las usas profesionalmente -->
                              </div>
-                            <ul id="todo-list">
-                                <!-- Las tareas se añadirán aquí dinámicamente -->
-                            </ul>
                         </div>
                     </div>
                 </div>
-
-                 <!-- Proyecto Generador de Paleta -->
-                 <div class="proyecto-card">
-                    <div class="proyecto-content">
-                        <h4><i class="fas fa-palette"></i> Generador de Paletas de Color</h4>
-                        <p class="desc">Herramienta simple que genera paletas de 5 colores hexadecimales aleatorios con cada clic. Útil para inspiración de diseño. Incluye la funcionalidad de copiar el código HEX al portapapeles.</p>
-                        <div class="tech-tags">
-                            <span class="js">JavaScript</span><span>HTML5</span><span>CSS3</span><span>UI Tool</span>
-                        </div>
-                        <div class="app-container">
-                            <div class="color-palette" id="color-palette">
-                                <!-- Cajas de color se generan aquí -->
-                            </div>
-                            <button id="generate-palette-btn"><i class="fas fa-sync-alt"></i> Generar Nueva</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto Contador -->
-                <div class="proyecto-card">
-                    <div class="proyecto-content">
-                        <h4><i class="fas fa-calculator"></i> Contador Simple Mejorado</h4>
-                        <p class="desc">Aplicación básica de contador para incrementar/decrementar/resetear un valor. Un buen ejemplo de manejo de eventos y actualización dinámica del UI con JavaScript vanilla.</p>
-                        <div class="tech-tags">
-                            <span class="js">JavaScript</span><span>HTML</span><span>CSS</span>
-                        </div>
-                        <div class="app-container">
-                            <span id="contador-valor">0</span>
-                            <div>
-                                <button id="btn-decrementar" class="contador-btn"><i class="fas fa-minus"></i></button>
-                                <button id="btn-resetear" class="contador-btn"><i class="fas fa-redo"></i></button>
-                                <button id="btn-incrementar" class="contador-btn"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto Generador de Citas -->
-                <div class="proyecto-card">
-                     <div class="proyecto-content">
-                        <h4><i class="fas fa-quote-right"></i> Generador de Citas</h4>
-                        <p class="desc">Widget que muestra citas inspiradoras o técnicas de forma aleatoria. Demuestra el trabajo con arrays de objetos y la actualización de contenido en la página.</p>
-                         <div class="tech-tags">
-                            <span class="js">JavaScript</span><span>HTML</span><span>CSS</span>
-                        </div>
-                        <div class="app-container">
-                            <blockquote id="cita-texto">Haz clic en el botón para ver una cita.</blockquote>
-                            <span id="cita-autor"></span>
-                            <button id="btn-nueva-cita" class="btn-generar">Nueva Cita <i class="fas fa-lightbulb"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Proyecto Placeholder (opcional) -->
-                 <div class="proyecto-card">
-                    <div class="proyecto-content">
-                        <h4><i class="fas fa-project-diagram"></i> Plataforma E-learning (Concepto)</h4>
-                        <p class="desc">Diseño conceptual y prototipado de una plataforma de aprendizaje online con React y Node.js. Enfocada en la arquitectura de microservicios y la experiencia de usuario fluida.</p>
-                         <div class="tech-tags">
-                            <span class="react">React</span><span>Node.js</span><span>Microservicios</span><span>UX/UI</span>
-                        </div>
-                         <div class="app-container" style="display: flex; justify-content: center; align-items: center; min-height: 150px; background-color: #e9ecef; flex-direction: column;">
-                            <i class="fas fa-drafting-compass" style="font-size: 3rem; color: var(--color-medium); margin-bottom: 15px;"></i>
-                             <span style="font-style: italic; color: var(--color-medium);">Diseño Conceptual</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            </section>
         </div>
-    </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="fade-in">
+    </main>
+
+    <footer class="main-footer" aria-labelledby="footer-title-sr">
         <div class="container">
-            <h2 class="section-title">Conectemos</h2>
-            <p class="intro">
-                Estoy siempre interesada en discutir nuevos proyectos, ideas innovadoras o simplemente charlar sobre tecnología. No dudes en contactarme a través de los siguientes canales o enviarme un mensaje.
-            </p>
-            <div class="contact-methods">
-                 <div class="contact-card">
-                     <i class="fas fa-envelope-open-text"></i>
-                     <h4>Correo Electrónico</h4>
-                     <p><a href="mailto:sofia.villanueva.dev@email.com">sofia.villanueva.dev@email.com</a></p>
-                 </div>
-                 <div class="contact-card">
-                     <i class="fab fa-linkedin"></i>
-                     <h4>LinkedIn</h4>
-                     <p><a href="https://www.linkedin.com/in/sofia-villanueva-placeholder" target="_blank">linkedin.com/in/sofia-villanueva-placeholder</a></p> <!-- Reemplaza -->
-                 </div>
-                  <div class="contact-card">
-                     <i class="fab fa-github-alt"></i>
-                     <h4>GitHub</h4>
-                     <p><a href="https://github.com/sofiavilla-placeholder" target="_blank">github.com/sofiavilla-placeholder</a></p> <!-- Reemplaza -->
-                 </div>
+            <div class="footer-content">
+                <div class="footer-column animate-on-scroll">
+                    <h4 id="footer-title-sr" class="sr-only">Marco Segura Información</h4>
+                    <a href="#hero" class="footer-logo page-nav-link" style="font-size: 1.8rem; margin-bottom:1rem; display:block; text-decoration:none; color:var(--color-blanco);">Marco<span>.</span>Segura</a>
+                    <p>Trafficker Digital enfocado en resultados. Ayudando a negocios a crecer con publicidad online estratégica.</p>
+                </div>
+                <div class="footer-column animate-on-scroll delay-1">
+                    <h4>Navegación Rápida</h4>
+                    <ul>
+                        <li><a href="#hero" class="page-nav-link">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="page-nav-link">Sobre Mí</a></li>
+                        <li><a href="#servicios" class="page-nav-link">Mis Servicios</a></li>
+                        <li><a href="#proyectos" class="page-nav-link">Casos de Éxito</a></li>
+                        <li><a href="#testimonios" class="page-nav-link">Testimonios</a></li>
+                        <li><a href="#contacto" class="page-nav-link">Contactar Ahora</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column animate-on-scroll delay-2">
+                    <h4>Plataformas Clave</h4>
+                     <ul>
+                        <li>Meta Ads (Facebook & Instagram)</li>
+                        <li>Google Ads (Search, Display, YouTube)</li>
+                        <li>TikTok Ads</li>
+                        <li>LinkedIn Ads</li>
+                        <li>Google Analytics</li>
+                    </ul>
+                </div>
+                <div class="footer-column animate-on-scroll delay-3">
+                    <h4>Conecta Conmigo</h4>
+                    <p>Email: <a href="mailto:marco.segura.trafficker@email.com" style="color:var(--color-acento);">marco.segura.trafficker@email.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/tuperfil" target="_blank" rel="noopener noreferrer" style="color:var(--color-acento);">Perfil de LinkedIn</a> (Actualiza el enlace)</p>
+                    <div class="social-links" style="margin-top:1rem;">
+                        <a href="https://linkedin.com/in/tuperfil" target="_blank" rel="noopener noreferrer" aria-label="Marco Segura en LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <!-- Puedes añadir Instagram si lo usas profesionalmente -->
+                    </div>
+                </div>
             </div>
-
-            <!-- Placeholder de Formulario -->
-            <div class="contact-form-placeholder fade-in">
-                 <h4>Envíame un mensaje directo:</h4>
-                 <form action="mailto:sofia.villanueva.dev@email.com" method="GET">
-                     <div class="form-group">
-                         <label for="name">Nombre:</label>
-                         <input type="text" id="name" name="subject" placeholder="Tu Nombre Completo" required>
-                     </div>
-                     <div class="form-group">
-                         <label for="email">Tu Email:</label>
-                         <input type="email" id="email" name="cc" placeholder="ejemplo@dominio.com" required>
-                     </div>
-                     <div class="form-group">
-                         <label for="message">Mensaje:</label>
-                         <textarea id="message" name="body" placeholder="Hola Sofia, me gustaría discutir..." required></textarea>
-                     </div>
-                     <div class="form-group">
-                         <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
-                     </div>
-                 </form>
+            <div class="footer-bottom">
+                 <ul class="footer-links-legal">
+                    <li><a href="#politica-privacidad" class="page-nav-link">Política de Privacidad</a></li>
+                    <li><a href="#terminos-uso" class="page-nav-link">Términos de Uso</a></li>
+                </ul>
+                <p class="copyright animate-on-scroll delay-4">© <span id="currentYearPortfolio"></span> Marco Segura. Trafficker Digital. Todos los derechos reservados.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2024 Sofia Villanueva | Desarrolladora de Software Senior</p>
-             <p>Construido con <i class="fas fa-code" style="color: var(--color-primary);"></i> y <i class="fas fa-heart" style="color: var(--color-secondary);"></i> | <a href="#hero">Volver Arriba</a></p>
         </div>
     </footer>
 
-    <!-- Botón Volver Arriba -->
-    <button id="volver-arriba" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+    <a href="#hero" class="scroll-to-top page-nav-link" id="scrollToTopBtnPortfolio" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a.75.75 0 01-.75-.75V4.56l-2.22 2.22a.75.75 0 11-1.06-1.06l3.5-3.5a.75.75 0 011.06 0l3.5 3.5a.75.75 0 11-1.06 1.06L10.75 4.56v12.69a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>
+    </a>
 
-    <!-- JavaScript -->
+    <!-- Hidden Content for Single Projects -->
+    <div class="hidden-content">
+        <div id="modanova-challenge">
+            <p>ModaNova, una prometedora tienda online de moda femenina, enfrentaba dificultades para escalar sus ventas. A pesar de tener productos atractivos, sus campañas de publicidad online no estaban generando el retorno esperado. El Costo por Adquisición (CPA) era demasiado alto y el Retorno de la Inversión Publicitaria (ROAS) era insostenible a largo plazo. Necesitaban una estrategia que no solo aumentara las ventas, sino que también optimizara el presupuesto publicitario.</p>
+        </div>
+        <div id="modanova-solution">
+            <p>Mi enfoque se centró en una reestructuración completa y optimización de sus campañas en Meta Ads y Google Shopping:</p>
+            <ul>
+                <li><strong>Auditoría Profunda:</strong> Analicé el rendimiento histórico de las campañas, las audiencias, los creativos y las landing pages para identificar puntos débiles y oportunidades.</li>
+                <li><strong>Reestructuración de Campañas en Meta Ads:</strong> Simplifiqué la estructura de campañas, implementé una estrategia de embudo completo (TOFU, MOFU, BOFU) con objetivos claros para cada etapa. Creé nuevas audiencias personalizadas (visitantes del sitio, carritos abandonados, compradores anteriores) y audiencias lookalike de alto valor.</li>
+                <li><strong>Optimización de Google Shopping:</strong> Refiné el feed de productos, mejoré los títulos y descripciones para SEO, y ajusté las pujas por producto y categoría. Implementé campañas de Performance Max para maximizar el alcance.</li>
+                <li><strong>A/B Testing Continuo:</strong> Probé sistemáticamente diferentes copys, imágenes, videos y formatos de anuncios (Carrusel, Colección, Stories) para identificar los mensajes y creativos más efectivos.</li>
+                <li><strong>Optimización de Landing Pages:</strong> Sugerí mejoras en las páginas de producto y el proceso de checkout para reducir la fricción y aumentar la tasa de conversión.</li>
+                <li><strong>Seguimiento y Reporting:</strong> Implementé un seguimiento de conversiones robusto y proporcioné informes semanales detallados sobre el rendimiento de las campañas y los KPIs clave.</li>
+            </ul>
+        </div>
+        <div id="modanova-results">
+            <p>Tras 3 meses de gestión y optimización intensiva, los resultados fueron notables:</p>
+            <ul>
+                <li>✅ <strong>Aumento del 150% en el ROAS general</strong> de las campañas.</li>
+                <li>✅ <strong>Reducción del 30% en el CPA</strong>, haciendo las adquisiciones más rentables.</li>
+                <li>✅ <strong>Incremento del 70% en las ventas online</strong> atribuidas a publicidad.</li>
+                <li>✅ Mejora de la tasa de conversión del sitio web en un 15%.</li>
+                <li>✅ ModaNova obtuvo una comprensión clara de qué audiencias y creativos funcionaban mejor, permitiendo una planificación más estratégica a futuro.</li>
+            </ul>
+        </div>
+
+        <div id="saasify-challenge">
+            <p>SaaSify Tech, una startup con una innovadora solución de software B2B, luchaba por generar un flujo constante de leads cualificados. Sus esfuerzos iniciales de marketing resultaban en pocos prospectos, y muchos de ellos no encajaban con su perfil de cliente ideal (ICP). Necesitaban una estrategia de tráfico pago que atrajera a tomadores de decisiones en empresas objetivo y los convirtiera en Marketing Qualified Leads (MQLs).</p>
+        </div>
+        <div id="saasify-solution">
+            <p>Desarrollé una estrategia B2B enfocada en plataformas clave y mensajes de alto valor:</p>
+            <ul>
+                <li><strong>Definición del ICP y Buyer Personas:</strong> Trabajé con el cliente para definir claramente su cliente ideal y las personas clave involucradas en la decisión de compra.</li>
+                <li><strong>Campañas en LinkedIn Ads:</strong> Lancé campañas de generación de leads y de contenido patrocinado, segmentando por cargo, industria, tamaño de empresa y habilidades. Utilicé formatos como Lead Gen Forms, InMail patrocinado y anuncios de imagen/video.</li>
+                <li><strong>Campañas en Google Search Ads:</strong> Creé campañas de búsqueda enfocadas en palabras clave de alta intención relacionadas con los problemas que su software resolvía, dirigidas a un público B2B.</li>
+                <li><strong>Creación de Lead Magnets:</strong> Asesoré en la creación de contenido de valor (ebooks, whitepapers, webinars) para usar como incentivo en las campañas de generación de leads.</li>
+                <li><strong>Optimización de Landing Pages:</strong> Diseñé y optimicé landing pages específicas para cada campaña, con mensajes claros, formularios concisos y fuerte prueba social.</li>
+                <li><strong>Nutrición de Leads (Lead Nurturing):</strong> Implementé una secuencia básica de correos electrónicos para nutrir los leads generados y moverlos a través del embudo.</li>
+            </ul>
+        </div>
+        <div id="saasify-results">
+            <p>En un período de 4 meses, la estrategia produjo un impacto significativo:</p>
+            <ul>
+                <li>✅ <strong>Aumento del 200% en la generación de MQLs</strong> mensuales.</li>
+                <li>✅ <strong>Reducción del 25% en el Costo por Lead Cualificado (CPL).</strong></li>
+                <li>✅ Mejora de la tasa de conversión de lead a MQL en un 40%.</li>
+                <li>✅ El equipo de ventas reportó una notable mejora en la calidad de los leads recibidos.</li>
+                <li>✅ SaaSify Tech logró cerrar varios clientes importantes provenientes de estas campañas.</li>
+            </ul>
+        </div>
+        
+        <div id="bienestar-challenge">
+            <p>La Clínica Bienestar, especializada en fisioterapia y rehabilitación, tenía una excelente reputación offline pero una presencia online limitada. Su principal desafío era atraer nuevos pacientes de su área local y facilitar el proceso de agendamiento de citas, compitiendo con otras clínicas establecidas.</p>
+        </div>
+        <div id="bienestar-solution">
+            <p>Implementé una estrategia de publicidad hiperlocalizada y orientada a la conversión directa:</p>
+            <ul>
+                <li><strong>Optimización de Google My Business:</strong> Aseguré que su perfil estuviera completo, optimizado y con reseñas positivas.</li>
+                <li><strong>Campañas de Google Ads Local y Search:</strong> Creé campañas de búsqueda enfocadas en términos como "fisioterapeuta [ciudad/barrio]", "rehabilitación cerca de mí", etc., con extensiones de llamada y ubicación. Lancé campañas locales para maximizar la visibilidad en Google Maps.</li>
+                <li><strong>Campañas en Meta Ads (Facebook/Instagram):</strong> Dirigí anuncios a personas dentro de un radio geográfico específico alrededor de la clínica, segmentando por intereses (ej. deportes, salud, bienestar) y comportamientos. Utilicé anuncios con objetivo de "Mensajes" y "Leads" para facilitar el contacto directo.</li>
+                <li><strong>Creativos Enfocados en Beneficios y Confianza:</strong> Los anuncios destacaban los beneficios de sus tratamientos, al equipo de profesionales y testimonios de pacientes.</li>
+                <li><strong>Landing Page Sencilla para Agendar Citas:</strong> Una página de destino clara con información sobre los servicios, el equipo y un formulario de solicitud de cita fácil de usar, además de un número de WhatsApp visible.</li>
+            </ul>
+        </div>
+        <div id="bienestar-results">
+            <p>Los resultados en los primeros 2 meses fueron muy positivos para la clínica:</p>
+            <ul>
+                <li>✅ <strong>Incremento del 80% en las solicitudes de citas online y por teléfono</strong> provenientes de publicidad.</li>
+                <li>✅ <strong>Costo por Cita Agendada (CPA) un 40% inferior</strong> a sus estimaciones iniciales.</li>
+                <li>✅ Aumento significativo de la visibilidad de la clínica en búsquedas locales.</li>
+                <li>✅ Pacientes nuevos mencionando haber visto los anuncios online.</li>
+            </ul>
+        </div>
+        
+        <!-- Contenido para páginas legales (simplificado) -->
+        <div id="politica-privacidad-content">
+            <h2>Política de Privacidad</h2>
+            <p>Última actualización: [FECHA ACTUAL]</p>
+            <p>En [Marco Segura - Trafficker Digital], valoro tu privacidad. Esta política explica cómo recopilo, uso y protejo tu información personal cuando visitas mi sitio web [TU_DOMINIO.COM] o interactúas con mis servicios.</p>
+            <h3>Información que Recopilo</h3>
+            <p>Puedo recopilar información que me proporcionas directamente (nombre, email, teléfono a través del formulario de contacto) e información técnica (IP, tipo de navegador, cookies) cuando navegas por el sitio.</p>
+            <h3>Cómo Uso tu Información</h3>
+            <p>Uso tu información para:</p>
+            <ul>
+                <li>Responder a tus consultas y proporcionarte los servicios solicitados.</li>
+                <li>Mejorar mi sitio web y mis servicios.</li>
+                <li>Enviarte comunicaciones de marketing (con tu consentimiento).</li>
+                <li>Cumplir con obligaciones legales.</li>
+            </ul>
+            <h3>Compartir tu Información</h3>
+            <p>No vendo tu información personal. Puedo compartirla con proveedores de servicios que me ayudan a operar (ej. hosting) o si la ley lo requiere.</p>
+            <h3>Seguridad y Tus Derechos</h3>
+            <p>Tomo medidas para proteger tu información. Tienes derecho a acceder, rectificar o eliminar tus datos personales. Contáctame para ejercer estos derechos.</p>
+            <p>Para más detalles, contáctame en [TU_EMAIL_DE_CONTACTO].</p>
+        </div>
+        <div id="terminos-uso-content">
+            <h2>Términos de Uso</h2>
+            <p>Última actualización: [FECHA ACTUAL]</p>
+            <p>Bienvenido a [TU_DOMINIO.COM], el sitio web de Marco Segura, Trafficker Digital. Al acceder y utilizar este sitio, aceptas estos Términos de Uso.</p>
+            <h3>Uso del Sitio</h3>
+            <p>Este sitio es para tu información y uso personal y no comercial. No debes usarlo para fines ilegales o que infrinjan los derechos de otros.</p>
+            <h3>Propiedad Intelectual</h3>
+            <p>Todo el contenido de este sitio (textos, gráficos, logos, etc.) es propiedad de Marco Segura o sus licenciantes y está protegido por leyes de propiedad intelectual. No puedes reproducir, distribuir o modificar el contenido sin permiso explícito.</p>
+            <h3>Enlaces a Terceros</h3>
+            <p>Este sitio puede contener enlaces a sitios de terceros. No soy responsable por el contenido o prácticas de privacidad de esos sitios.</p>
+            <h3>Limitación de Responsabilidad</h3>
+            <p>El sitio se proporciona "tal cual". No garantizo que sea ininterrumpido o libre de errores. En la medida máxima permitida por la ley, no seré responsable por daños derivados del uso de este sitio.</p>
+            <h3>Cambios y Contacto</h3>
+            <p>Me reservo el derecho de modificar estos términos en cualquier momento. Si tienes preguntas, contáctame en [TU_EMAIL_DE_CONTACTO].</p>
+        </div>
+
+    </div>
+
+
     <script>
-        // --- Script para el Header con Scroll ---
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
+    document.addEventListener('DOMContentLoaded', () => {
+        const pageContents = document.querySelectorAll('.page-content');
+        const mainNavLinksFromMenu = document.querySelectorAll('#mainMenu a.page-nav-link');
+        const allPageNavLinks = document.querySelectorAll('a.page-nav-link');
+        const body = document.body;
 
-        // --- Script para el Contador ---
-        const contadorValor = document.getElementById('contador-valor');
-        const btnIncrementar = document.getElementById('btn-incrementar');
-        const btnDecrementar = document.getElementById('btn-decrementar');
-        const btnResetear = document.getElementById('btn-resetear');
-        let contador = 0;
-        function actualizarContador() { contadorValor.textContent = contador; }
-        btnIncrementar?.addEventListener('click', () => { contador++; actualizarContador(); });
-        btnDecrementar?.addEventListener('click', () => { contador--; actualizarContador(); });
-        btnResetear?.addEventListener('click', () => { contador = 0; actualizarContador(); });
-        if(contadorValor) actualizarContador(); // Inicializar si existe
-
-        // --- Script para el Generador de Citas ---
-        const citaTexto = document.getElementById('cita-texto');
-        const citaAutor = document.getElementById('cita-autor');
-        const btnNuevaCita = document.getElementById('btn-nueva-cita');
-        const citas = [
-            { texto: "La medida de la inteligencia es la capacidad de cambiar.", autor: "Albert Einstein" },
-            { texto: "El software es una gran combinación entre arte e ingeniería.", autor: "Bill Gates" },
-            { texto: "Python es un experimento para ver cuánto pueden simplificarse los lenguajes de programación.", autor: "Guido van Rossum" },
-            { texto: "La simplicidad es el alma de la eficiencia.", autor: "Austin Freeman" },
-            { texto: "No optimices prematuramente.", autor: "Donald Knuth" },
-            { texto: "Hablar es fácil. Muéstrame el código.", autor: "Linus Torvalds" },
-            { texto: "La verdad sólo puede encontrarse en un lugar: el código.", autor: "Robert C. Martin"},
-            { texto: "La depuración es doblemente difícil que escribir el código en primer lugar. Por lo tanto, si escribes el código lo más inteligentemente posible, por definición, no eres lo suficientemente inteligente para depurarlo.", autor: "Brian Kernighan"}
-        ];
-        function mostrarNuevaCita() {
-            if (!citaTexto || !citaAutor) return;
-            const citaSeleccionada = citas[Math.floor(Math.random() * citas.length)];
-            citaTexto.style.opacity = 0; citaAutor.style.opacity = 0;
-            setTimeout(() => {
-                citaTexto.textContent = `"${citaSeleccionada.texto}"`;
-                citaAutor.textContent = `— ${citaSeleccionada.autor}`;
-                citaTexto.style.opacity = 1; citaAutor.style.opacity = 1;
-            }, 300);
-        }
-        btnNuevaCita?.addEventListener('click', mostrarNuevaCita);
-
-        // --- Script To-Do List ---
-        const todoInput = document.getElementById('todo-input');
-        const addTodoBtn = document.getElementById('add-todo-btn');
-        const todoList = document.getElementById('todo-list');
-
-        function addTodo() {
-            if (!todoInput || !todoList || todoInput.value.trim() === '') return;
-
-            const li = document.createElement('li');
-            const span = document.createElement('span');
-            span.textContent = todoInput.value.trim();
-            span.addEventListener('click', () => {
-                li.classList.toggle('completed');
-            });
-
-            const deleteBtn = document.createElement('button');
-            deleteBtn.classList.add('delete-btn');
-            deleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
-            deleteBtn.addEventListener('click', () => {
-                li.remove();
-            });
-
-            li.appendChild(span);
-            li.appendChild(deleteBtn);
-            todoList.appendChild(li);
-            todoInput.value = '';
-            todoInput.focus();
-        }
-        addTodoBtn?.addEventListener('click', addTodo);
-        todoInput?.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                addTodo();
-            }
-        });
-
-         // --- Script Generador de Paleta de Colores ---
-        const paletteContainer = document.getElementById('color-palette');
-        const generatePaletteBtn = document.getElementById('generate-palette-btn');
-
-        function generateRandomHexColor() {
-            return '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
-        }
-
-        function displayPalette() {
-            if (!paletteContainer) return;
-            paletteContainer.innerHTML = ''; // Limpiar paleta anterior
-            for (let i = 0; i < 5; i++) {
-                const color = generateRandomHexColor();
-                const colorBox = document.createElement('div');
-                colorBox.classList.add('color-box');
-                colorBox.style.backgroundColor = color;
-                colorBox.textContent = color.toUpperCase();
-                colorBox.title = "Copiar " + color.toUpperCase(); // Tooltip
-                colorBox.addEventListener('click', () => {
-                    navigator.clipboard.writeText(color)
-                        .then(() => {
-                            // Opcional: Mostrar feedback de copia
-                            colorBox.textContent = '¡Copiado!';
-                            setTimeout(() => { colorBox.textContent = color.toUpperCase(); }, 1000);
-                        })
-                        .catch(err => console.error('Error al copiar: ', err));
-                });
-                paletteContainer.appendChild(colorBox);
-            }
-        }
-        generatePaletteBtn?.addEventListener('click', displayPalette);
-        if(paletteContainer) displayPalette(); // Generar paleta inicial
-
-        // --- Script Navegación Activa ---
-        const navLinks = document.querySelectorAll('header nav ul li a');
-        const sections = document.querySelectorAll('section');
-        function changeActiveLink() {
-             let index = sections.length;
-            while(--index && window.scrollY + 100 < sections[index].offsetTop) {}
-            navLinks.forEach((link) => link.classList.remove('active'));
-             if (index >= 0 && navLinks[index]) {
-                 navLinks[index].classList.add('active');
-             } else if (window.scrollY < (sections[0]?.offsetTop || 0) - 100) {
-                 navLinks[0]?.classList.add('active');
-             }
-        }
-         changeActiveLink();
-        window.addEventListener('scroll', changeActiveLink);
-
-        // --- Script Botón Volver Arriba ---
-        const volverArribaBtn = document.getElementById('volver-arriba');
-        window.addEventListener('scroll', () => {
-            volverArribaBtn?.classList.toggle('visible', window.scrollY > 300);
-        });
-        volverArribaBtn?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-        // --- Script Animación Fade-in con Intersection Observer ---
-        const faders = document.querySelectorAll('.fade-in');
-        const appearOptions = { threshold: 0.15 }; // Ajustar umbral si es necesario
-        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
             });
-        }, appearOptions);
-        faders.forEach(fader => appearOnScroll.observe(fader));
+        }, {
+            threshold: 0.1
+        });
+        animatedElements.forEach(el => observer.observe(el));
 
+        const menuToggle = document.getElementById('menuToggle');
+        const mainMenu = document.getElementById('mainMenu');
+
+        if (menuToggle && mainMenu) {
+            menuToggle.addEventListener('click', () => {
+                const isActive = mainMenu.classList.toggle('active');
+                menuToggle.classList.toggle('open');
+                body.style.overflow = isActive ? 'hidden' : '';
+                menuToggle.setAttribute('aria-expanded', isActive);
+                menuToggle.setAttribute('aria-label', isActive ? 'Cerrar menú' : 'Abrir menú');
+                if(isActive && mainMenu.querySelector('a')) {
+                    mainMenu.querySelector('a').focus();
+                }
+            });
+        }
+
+        function closeMobileMenu() {
+            if (mainMenu && mainMenu.classList.contains('active')) {
+                mainMenu.classList.remove('active');
+                if (menuToggle) {
+                    menuToggle.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Abrir menú');
+                }
+                body.style.overflow = '';
+            }
+        }
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mainMenu && mainMenu.classList.contains('active')) {
+                closeMobileMenu();
+                if (menuToggle) menuToggle.focus();
+            }
+        });
+
+        function showPage(pageIdToShow, details = {}) {
+            pageIdToShow = pageIdToShow.startsWith('#') ? pageIdToShow.substring(1) : pageIdToShow;
+            let targetPageElementId;
+            let isSingleItemPage = false;
+            let isLegalPage = false;
+
+            if (pageIdToShow.startsWith('project-item-')) {
+                targetPageElementId = 'page-single-project';
+                isSingleItemPage = true;
+                populateSingleProjectPage(details);
+            } else if (pageIdToShow === 'politica-privacidad' || pageIdToShow === 'terminos-uso') {
+                targetPageElementId = `page-${pageIdToShow}`; // Asumimos que tienes divs con estos IDs
+                isLegalPage = true;
+                populateLegalPage(pageIdToShow); // Nueva función para páginas legales
+            }
+             else {
+                 targetPageElementId = `page-${pageIdToShow}`;
+            }
+
+            let pageFound = false;
+            pageContents.forEach(page => {
+                if (page.id === targetPageElementId) {
+                    page.style.display = 'block';
+                    pageFound = true;
+                    const animatedElementsOnPage = page.querySelectorAll('.animate-on-scroll');
+                    animatedElementsOnPage.forEach(el => {
+                        el.classList.remove('is-visible');
+                        observer.unobserve(el);
+                        observer.observe(el);
+                    });
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+
+            if (!pageFound) {
+                const heroPage = document.getElementById('page-hero');
+                if (heroPage) {
+                     pageContents.forEach(p => p.style.display = 'none');
+                     heroPage.style.display = 'block';
+                     const animatedHeroElements = heroPage.querySelectorAll('.animate-on-scroll');
+                        animatedHeroElements.forEach(el => {
+                        el.classList.remove('is-visible');
+                        observer.unobserve(el);
+                        observer.observe(el);
+                    });
+                }
+                pageIdToShow = 'hero';
+            }
+
+            updateActiveNavLink(pageIdToShow, isSingleItemPage || isLegalPage);
+            window.scrollTo(0, 0);
+            closeMobileMenu();
+        }
+
+        function populateSingleProjectPage(details) {
+            const titleEl = document.getElementById('single-project-title-placeholder');
+            const categoryEl = document.getElementById('single-project-category-placeholder');
+            const imageEl = document.getElementById('single-project-image-placeholder');
+            const clientEl = document.getElementById('project-client-placeholder');
+            const platformsEl = document.getElementById('project-platforms-placeholder');
+            const durationEl = document.getElementById('project-duration-placeholder');
+            const objectiveEl = document.getElementById('project-objective-placeholder');
+            const challengeEl = document.getElementById('single-project-challenge-placeholder');
+            const solutionEl = document.getElementById('single-project-solution-placeholder');
+            const resultsEl = document.getElementById('single-project-results-placeholder');
+
+            if(titleEl) titleEl.innerHTML = details.projectTitle || 'Nombre del Proyecto';
+            if(categoryEl) categoryEl.textContent = details.projectCategory || 'Caso de Estudio';
+            if(imageEl) {
+                imageEl.src = details.projectImage || 'https://via.placeholder.com/800x450/1A1A1E/08D9D6?text=Imagen+Proyecto';
+                imageEl.alt = details.projectTitle ? `Imagen principal del proyecto ${details.projectTitle}` : 'Imagen principal del proyecto';
+            }
+            if(clientEl) clientEl.textContent = details.projectClient || 'Cliente Confidencial';
+            if(platformsEl) platformsEl.textContent = details.projectPlatforms || 'Varias Plataformas';
+            if(durationEl) durationEl.textContent = details.projectDuration || 'N/A';
+            if(objectiveEl) objectiveEl.textContent = details.projectObjective || 'N/A';
+
+
+            const challengeContent = document.querySelector(details.projectChallengeSelector);
+            if(challengeEl && challengeContent) challengeEl.innerHTML = challengeContent.innerHTML;
+            else if(challengeEl) challengeEl.innerHTML = '<p>Información no disponible.</p>';
+
+            const solutionContent = document.querySelector(details.projectSolutionSelector);
+            if(solutionEl && solutionContent) solutionEl.innerHTML = solutionContent.innerHTML;
+            else if(solutionEl) solutionEl.innerHTML = '<p>Información no disponible.</p>';
+
+            const resultsContent = document.querySelector(details.projectResultsSelector);
+            if(resultsEl && resultsContent) resultsEl.innerHTML = resultsContent.innerHTML;
+            else if(resultsEl) resultsEl.innerHTML = '<p>Información no disponible.</p>';
+        }
+
+        function populateLegalPage(pageId) {
+            const legalPageContainer = document.getElementById(`page-${pageId}`);
+            if (!legalPageContainer) return;
+
+            const contentSourceId = `${pageId}-content`; // e.g., politica-privacidad-content
+            const sourceContentDiv = document.getElementById(contentSourceId);
+            
+            // Podrías tener una estructura más específica dentro de la página legal si lo necesitas
+            // Por ahora, simplemente inyectamos el contenido.
+            // Asumimos que `page-${pageId}` tiene un div interno para el contenido, por ejemplo, con clase .legal-content-area
+            const targetContentArea = legalPageContainer.querySelector('.section-padding .container') || legalPageContainer.querySelector('.container'); // O un selector más específico
+
+            if (targetContentArea && sourceContentDiv) {
+                targetContentArea.innerHTML = sourceContentDiv.innerHTML; // Esto podría ser muy simple
+                // O podrías tener una estructura más elaborada en la página legal:
+                // targetContentArea.querySelector('h2').textContent = sourceContentDiv.querySelector('h2').textContent;
+                // targetContentArea.querySelector('.main-legal-text').innerHTML = sourceContentDiv.querySelector('.main-legal-text').innerHTML;
+            } else if (targetContentArea) {
+                targetContentArea.innerHTML = '<p>Contenido no disponible.</p>';
+            }
+        }
+
+
+        function updateActiveNavLink(currentPageId, isSubPage) {
+             mainNavLinksFromMenu.forEach(link => {
+                link.classList.remove('active-link');
+                link.removeAttribute('aria-current');
+                let linkPageId = link.getAttribute('href').substring(1);
+
+                if (isSubPage) {
+                    if (currentPageId.startsWith('project-item-') && linkPageId === 'proyectos') {
+                        link.classList.add('active-link');
+                        link.setAttribute('aria-current', 'page');
+                    }
+                    // Podrías añadir lógica para otras subpáginas si las tuvieras (ej. blog)
+                    // O para páginas legales si quieres destacar "Contacto" o "Inicio"
+                } else if (linkPageId === currentPageId) {
+                    link.classList.add('active-link');
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+        }
+
+        allPageNavLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const pageId = href.substring(1);
+                    let navigationDetails = {};
+
+                    if (pageId.startsWith('project-item-')) {
+                        navigationDetails.projectId = this.dataset.projectId;
+                        navigationDetails.projectTitle = this.dataset.projectTitle;
+                        navigationDetails.projectCategory = this.dataset.projectCategory;
+                        navigationDetails.projectClient = this.dataset.projectClient;
+                        navigationDetails.projectPlatforms = this.dataset.projectPlatforms;
+                        navigationDetails.projectImage = this.dataset.projectImage;
+                        navigationDetails.projectChallengeSelector = this.dataset.projectChallengeSelector;
+                        navigationDetails.projectSolutionSelector = this.dataset.projectSolutionSelector;
+                        navigationDetails.projectResultsSelector = this.dataset.projectResultsSelector;
+                        navigationDetails.projectDuration = this.dataset.projectDuration || "3 Meses"; // Default
+                        navigationDetails.projectObjective = this.dataset.projectObjective || "Aumentar ROI y Ventas"; // Default
+                    }
+                    // No se necesitan detalles especiales para páginas legales ya que el contenido está en el div hidden.
+
+                    showPage(pageId, navigationDetails);
+                    if (window.location.hash !== href) {
+                        window.location.hash = href;
+                    }
+                }
+            });
+        });
+
+        function handleHashChange() {
+            const hash = window.location.hash;
+            if (hash) {
+                const pageId = hash.substring(1);
+                let navigationDetails = {};
+                const matchingLink = document.querySelector(`a.page-nav-link[href="${hash}"]`);
+                 if(matchingLink) {
+                     if (pageId.startsWith('project-item-')) {
+                        navigationDetails.projectId = matchingLink.dataset.projectId;
+                        navigationDetails.projectTitle = matchingLink.dataset.projectTitle;
+                        navigationDetails.projectCategory = matchingLink.dataset.projectCategory;
+                        navigationDetails.projectClient = matchingLink.dataset.projectClient;
+                        navigationDetails.projectPlatforms = matchingLink.dataset.projectPlatforms;
+                        navigationDetails.projectImage = matchingLink.dataset.projectImage;
+                        navigationDetails.projectChallengeSelector = matchingLink.dataset.projectChallengeSelector;
+                        navigationDetails.projectSolutionSelector = matchingLink.dataset.projectSolutionSelector;
+                        navigationDetails.projectResultsSelector = matchingLink.dataset.projectResultsSelector;
+                        navigationDetails.projectDuration = matchingLink.dataset.projectDuration || "3 Meses";
+                        navigationDetails.projectObjective = matchingLink.dataset.projectObjective || "Aumentar ROI y Ventas";
+                    }
+                }
+                showPage(pageId, navigationDetails);
+            } else {
+                showPage('hero');
+            }
+        }
+
+        window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
+
+        const header = document.getElementById('mainHeader');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        }
+
+        const scrollToTopBtn = document.getElementById('scrollToTopBtnPortfolio');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) { /* Reducido para que aparezca antes */
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+             scrollToTopBtn.addEventListener('click', function(e) {
+                if (this.classList.contains('page-nav-link')) { // Asegura que es un page-nav-link
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    showPage(targetId); // Usa la función showPage
+                } else { // Comportamiento por defecto si no es un page-nav-link (aunque aquí sí lo es)
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        }
+
+        const currentYearEl = document.getElementById('currentYearPortfolio');
+        if (currentYearEl) {
+            currentYearEl.textContent = new Date().getFullYear();
+        }
+
+        const contactFormPortfolio = document.getElementById('contactFormPortfolio');
+        if (contactFormPortfolio) {
+            contactFormPortfolio.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('contact-name-portfolio').value;
+                const email = document.getElementById('contact-email-portfolio').value;
+                const message = document.getElementById('contact-message-portfolio').value;
+
+                if (!name || !email || !message) {
+                    alert('Por favor, completa todos los campos requeridos.');
+                    return;
+                }
+                if (!email.includes('@') || !email.includes('.')) {
+                     alert('Por favor, introduce un correo electrónico válido.');
+                    return;
+                }
+
+                // Aquí iría la lógica para enviar el formulario (ej. fetch a un backend o servicio)
+                alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto. (Esto es una demostración, el formulario no envía datos reales).');
+                this.reset();
+            });
+        }
+
+        // Crear divs para páginas legales si no existen, para que el JS de showPage funcione
+        const legalPageIds = ['politica-privacidad', 'terminos-uso'];
+        const mainContent = document.getElementById('main-content');
+
+        legalPageIds.forEach(id => {
+            if (!document.getElementById(`page-${id}`)) {
+                const pageDiv = document.createElement('div');
+                pageDiv.id = `page-${id}`;
+                pageDiv.classList.add('page-content');
+                pageDiv.style.display = 'none'; // Oculto por defecto
+
+                // Crear la estructura interna que espera populateLegalPage
+                const section = document.createElement('section');
+                section.classList.add('section-padding');
+                const container = document.createElement('div');
+                container.classList.add('container');
+                container.style.maxWidth = '900px'; // Estilo de las páginas legales
+                // Aquí se inyectará el contenido desde los divs hidden
+                section.appendChild(container);
+                pageDiv.appendChild(section);
+                mainContent.appendChild(pageDiv);
+                pageContents.push(pageDiv); // Añadir al array para que showPage lo maneje
+            }
+        });
+
+    });
     </script>
 
 </body>
